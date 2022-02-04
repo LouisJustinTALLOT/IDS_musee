@@ -1,0 +1,19 @@
+@font-face {
+    font-family: AleoRegular;
+    src: url(aleo-regular-webfont.woff2);
+}
+
+@font-face {
+    font-family: AleoBold;
+    src: url(aleo-bold-webfont.woff2);
+}
+
+
+body {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: AleoBold;
+  font-size: xx-large;
+  padding: 10px;
+}
