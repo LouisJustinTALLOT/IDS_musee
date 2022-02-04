@@ -13,7 +13,31 @@ body {
   background-color: black;
   color: white;
   text-align: center;
-  font-family: AleoBold;
-  font-size: xx-large;
-  padding: 10px;
+  padding: 0.5%;
+}
+
+#message_bonjour {
+    display:block;
+    padding: 2.5% 0 1% 0;
+
+    font-size: 2.5em;
+    font-family: AleoRegular;
+}
+
+#instructions {
+    display:block;
+    padding: 1% 0 1.5% 0;
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: lightgrey;
+}
+
+.link_video {
+    display: inline-block;
+    width: 30%;
+    padding: 3% 0;
+}
+.link_video img {
+    display: inline-block;
+    width: 90%;
 }
