@@ -41,3 +41,21 @@ body {
     display: inline-block;
     width: 90%;
 }
+
+.one_video {
+    display: none;
+
+    height: auto;
+    width: 90%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+
+}
+
+.one_video video{
+    display: inline-block;
+    max-width:100%;
+    max-height:100%;
+    
+}
