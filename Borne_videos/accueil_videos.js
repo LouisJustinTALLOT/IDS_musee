@@ -2,10 +2,15 @@ $(document).ready(function(){
     $("#presentation_musee").click(
         function(){
             $("#video_presentation_musee").show();
+            $("#video_presentation_musee").children("video").get(0).currentTime = 0;
             $("#video_presentation_musee").children("video").get(0).play();
             console.log($("#video_presentation_musee").children("video").get(0));
         }
     );
+
+    $("#video_presentation_musee").children("video").on("ended", function(){
+        $("#video_presentation_musee").fadeOut(600);
+    });
 
     $("html").click(
         function(e){
