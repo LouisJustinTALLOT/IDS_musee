@@ -35,11 +35,11 @@ body {
 .link_video {
     display: inline-block;
     width: 30%;
-    padding: 3% 0;
+    padding: 2% 0;
 }
 .link_video img {
     display: inline-block;
-    width: 90%;
+    width: 100%;
 }
 
 .one_video {
