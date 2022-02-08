@@ -1,16 +1,27 @@
 $(document).ready(function(){
-    $("#presentation_musee").click(
-        function(){
-            $("#video_presentation_musee").show();
-            $("#video_presentation_musee").children("video").get(0).currentTime = 0;
-            $("#video_presentation_musee").children("video").get(0).play();
-            console.log($("#video_presentation_musee").children("video").get(0));
-        }
-    );
+    const NOMS_VIDEOS = [
+        "presentation_musee",
+        "histoire",
+        "sepiolite",
+        "calcite",
+        "azurite",
+    ]; 
 
-    $("#video_presentation_musee").children("video").on("ended", function(){
-        $("#video_presentation_musee").fadeOut(600);
-    });
+    for (let nom_video of NOMS_VIDEOS){
+        $("#" + nom_video).click(
+            function(){
+                $("#video_" + nom_video).show();
+                $("#video_" + nom_video).children("video").get(0).currentTime = 0;
+                $("#video_" + nom_video).children("video").get(0).play();
+            }
+        );
+
+
+        $("#video_" + nom_video).children("video").on("ended", function(){
+            $("#video_" + nom_video).fadeOut(600);
+        });
+    }
+
 
     $("html").click(
         function(e){
