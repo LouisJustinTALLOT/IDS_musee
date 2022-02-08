@@ -1,4 +1,7 @@
 $(document).ready(function(){
+    // suppress the ability to right-click (for interactive touchscreen)
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
     const NOMS_VIDEOS = [
         "presentation_musee",
         "histoire",
