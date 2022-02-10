@@ -1,14 +1,17 @@
-import speech_recognition as sr
-from gtts import gTTS
-import pygame # Audio mixer
 import random
 import os
-import vlc
-import numpy as np
 import time
+
+import pygame # Audio mixer
+import speech_recognition as sr
+from gtts import gTTS
+from flask_socketio import SocketIO
+
 
 language = 'fr'
 mic = sr.Microphone()
+
+socketio = SocketIO()
 
 
 
@@ -45,40 +48,47 @@ def play(mytext):
     os.remove(audio_file) # remove audio file
 
 def record_audio():
-        audio = pi_ear.listen(source, timeout=1.0)
-        response = ''
-        try:
-            response = pi_ear.recognize_google(audio, language="fr-FR")
-        except sr.UnknownValueError:
-            play("Je ne comprends pas")
-        except sr.RequestError:
-            play("Désolé, le service n'est pas disponible")
-        print(f">> {response.lower()}") # print what user said
-        return response.lower()
+    audio = pi_ear.listen(source, timeout=1.0)
+    response = ''
+    try:
+        response = pi_ear.recognize_google(audio, language="fr-FR")
+    except sr.UnknownValueError:
+        play("Je ne comprends pas")
+    except sr.RequestError:
+        play("Désolé, le service n'est pas disponible")
+    print(f">> {response.lower()}") # print what user said
+    return response.lower()
 
 def respond(response):
 
     # greetings
     global mediaPlay
+    global socketio
+
     if there_exists(["présentation", "vidéo de présentation", "introduction", "présentation", "présentation générale", "présentation générale du musée"], response):
         play("Bonjour chers visiteurs, bienvenue au Musée de Minéralogie.")
         #### Launch video
+        socketio.emit("launch_video", {"nom_video": "presentation_musee"})
 
     if there_exists(['sépiolite', "présentation de la sépiolite"], response):
         play("Voici la vidéo sur la sépiolite")
         #### Launch video
+        socketio.emit("launch_video", {"nom_video": "sepiolite"})
 
     if there_exists(['histoire', 'musée',"histoire du musée et de l'école", "histoire de l'école", "vidéo sur l'histoire"], response):
         play("Voici la vidéo sur l'histoire du musée")
         #### Launch video
+        socketio.emit("launch_video", {"nom_video": "histoire"})
 
     if there_exists(['calcite', "présentation de la calcite"], response):
         play("Voici la vidéo sur la calcite")
         #### Launch video
+        socketio.emit("launch_video", {"nom_video": "calcite"})
 
     if there_exists(['azurite', "présentation de la azurite"], response):
         play("Voici la vidéo sur la azurite")
         #### Launch video
+        socketio.emit("launch_video", {"nom_video": "azurite"})
 
 
 #####
@@ -88,12 +98,17 @@ with mic as source:
     pi_ear.adjust_for_ambient_noise(source, duration=0.5)
     pi_ear.dynamic_energy_threshold = 3000
 
-def detectHello(recognizer, audio):
+def detect_hello(recognizer, audio):
     response = recognizer.recognize_google(audio, language="fr-FR")
     print(response)
     respond(response)
 
-stop_listening = pi_ear.listen_in_background(mic, detectHello)
+stop_listening = pi_ear.listen_in_background(mic, detect_hello)
 
-while True:
-    pass
+
+
+def main_loop():
+    return
+    while True:
+        time.sleep(0.1)
+        ...

@@ -6,6 +6,12 @@ app = Flask(__name__)
 socketio = SocketIO(app)
 
 
+import main_app
+
+main_app.socketio = socketio
+main_app.main_loop()
+
+
 @app.route('/')
 def index():
     return render_template("accueil_videos.html")
