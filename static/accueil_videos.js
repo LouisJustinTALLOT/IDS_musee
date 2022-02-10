@@ -17,6 +17,12 @@ $(document).ready(function(){
         $("#video_" + nom_video).fadeIn(3000);
         $("#video_" + nom_video).children("video").get(0).currentTime = 0;
         $("#video_" + nom_video).children("video").get(0).play();
+
+        if (nom_video === "azurite"){
+            $.ajax({
+                url : "172.16.16.0/blink_led", // replace the 0
+            });
+        }
     }
 
     for (let nom_video of NOMS_VIDEOS){
