@@ -68,27 +68,27 @@ def respond(response):
     if there_exists(["présentation", "vidéo de présentation", "introduction", "présentation", "présentation générale", "présentation générale du musée"], response):
         play("Bonjour chers visiteurs, bienvenue au Musée de Minéralogie.")
         #### Launch video
-        socketio.emit("launch_video", {"nom_video": "presentation_musee"})
+        socketio.emit("launch_video", {"vid_name": "presentation_musee"})
 
     if there_exists(['sépiolite', "présentation de la sépiolite"], response):
         play("Voici la vidéo sur la sépiolite")
         #### Launch video
-        socketio.emit("launch_video", {"nom_video": "sepiolite"})
+        socketio.emit("launch_video", {"vid_name": "sepiolite"})
 
     if there_exists(['histoire', 'musée',"histoire du musée et de l'école", "histoire de l'école", "vidéo sur l'histoire"], response):
         play("Voici la vidéo sur l'histoire du musée")
         #### Launch video
-        socketio.emit("launch_video", {"nom_video": "histoire"})
+        socketio.emit("launch_video", {"vid_name": "histoire"})
 
     if there_exists(['calcite', "présentation de la calcite"], response):
         play("Voici la vidéo sur la calcite")
         #### Launch video
-        socketio.emit("launch_video", {"nom_video": "calcite"})
+        socketio.emit("launch_video", {"vid_name": "calcite"})
 
     if there_exists(['azurite', "présentation de la azurite"], response):
         play("Voici la vidéo sur la azurite")
         #### Launch video
-        socketio.emit("launch_video", {"nom_video": "azurite"})
+        socketio.emit("launch_video", {"vid_name": "azurite"})
 
 
 #####
@@ -96,7 +96,7 @@ def respond(response):
 
 with mic as source:  
     pi_ear.adjust_for_ambient_noise(source, duration=0.5)
-    pi_ear.dynamic_energy_threshold = 3000
+    pi_ear.energy_threshold = 100
 
 def detect_hello(recognizer, audio):
     response = recognizer.recognize_google(audio, language="fr-FR")
@@ -105,10 +105,9 @@ def detect_hello(recognizer, audio):
 
 stop_listening = pi_ear.listen_in_background(mic, detect_hello)
 
+print("ici")
+# play("Bonjour chers visiteurs, bienvenue au Musée de Minéralogie.")
 
 
-def main_loop():
-    return
-    while True:
-        time.sleep(0.1)
-        ...
+# def main_loop():
+#     stop_listening()

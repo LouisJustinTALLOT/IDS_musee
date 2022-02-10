@@ -9,11 +9,11 @@ socketio = SocketIO(app)
 import main_app
 
 main_app.socketio = socketio
-main_app.main_loop()
 
 
 @app.route('/')
 def index():
+    print("Serving index....")
     return render_template("accueil_videos.html")
 
 if __name__=="__main__":
