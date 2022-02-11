@@ -5,13 +5,12 @@ import time
 import pygame # Audio mixer
 import speech_recognition as sr
 from gtts import gTTS
-from flask_socketio import SocketIO
+
+import requests
 
 
 language = 'fr'
 mic = sr.Microphone()
-
-socketio = SocketIO()
 
 
 
@@ -63,36 +62,36 @@ def respond(response):
 
     # greetings
     global mediaPlay
-    global socketio
+    global stop_listening
 
     if there_exists(["présentation", "vidéo de présentation", "introduction", "présentation", "présentation générale", "présentation générale du musée"], response):
         play("Bonjour chers visiteurs, bienvenue au Musée de Minéralogie.")
         #### Launch video
-        socketio.emit("launch_video", {"vid_name": "presentation_musee"})
+        requests.get("http://localhost:5000/launch_video", {"vid_name": "presentation_musee"})
         stop_listening()
 
     if there_exists(['sépiolite', "présentation de la sépiolite"], response):
         play("Voici la vidéo sur la sépiolite")
         #### Launch video
-        socketio.emit("launch_video", {"vid_name": "sepiolite"})
+        requests.get("http://localhost:5000/launch_video", {"vid_name": "sepiolite"})
         stop_listening()
 
     if there_exists(['histoire', 'musée',"histoire du musée et de l'école", "histoire de l'école", "vidéo sur l'histoire"], response):
         play("Voici la vidéo sur l'histoire du musée")
         #### Launch video
-        socketio.emit("launch_video", {"vid_name": "histoire"})
+        requests.get("http://localhost:5000/launch_video", {"vid_name": "histoire"})
         stop_listening()
 
     if there_exists(['calcite', "présentation de la calcite"], response):
         play("Voici la vidéo sur la calcite")
         #### Launch video
-        socketio.emit("launch_video", {"vid_name": "calcite"})
+        requests.get("http://localhost:5000/launch_video", {"vid_name": "calcite"})
         stop_listening()
 
     if there_exists(['azurite', "présentation de la azurite"], response):
         play("Voici la vidéo sur la azurite")
         #### Launch video
-        socketio.emit("launch_video", {"vid_name": "azurite"})
+        requests.get("http://localhost:5000/launch_video", {"vid_name": "azurite"})
         stop_listening()
 
 #####
@@ -109,9 +108,7 @@ def detect_hello(recognizer, audio):
 
 stop_listening = pi_ear.listen_in_background(mic, detect_hello)
 
-print("ici")
-
 
 def relaunch_script():
+    global stop_listening
     stop_listening = pi_ear.listen_in_background(mic, detect_hello)
-    return stop_listening
