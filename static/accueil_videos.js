@@ -1,7 +1,4 @@
 $(document).ready(function(){
-
-    var socket = io.connect("http://" + document.domain + ":" + location.port );
-
     // suppress the ability to right-click (for interactive touchscreen)
     document.addEventListener('contextmenu', event => event.preventDefault());
 
@@ -20,7 +17,7 @@ $(document).ready(function(){
 
         if (nom_video === "azurite"){
             $.ajax({
-                url : "172.16.16.0/blink_led", // replace the 0
+                url : "http://172.16.16.122:5003/blink_led",
             });
         }
     }
@@ -32,7 +29,11 @@ $(document).ready(function(){
 
 
         $("#video_" + nom_video).children("video").on("ended", function(){
-            $("#video_" + nom_video).fadeOut(600);
+            $("#video_" + nom_video).fadeOut(2000);
+
+            $.ajax({
+                url : "http://" + document.domain + ":" + location.port + "/relaunch_script",
+            });
         });
     }
 
@@ -55,6 +56,10 @@ $(document).ready(function(){
                     console.log(vid);
                     vid.get(0).pause();
                     vid.get(0).currentTime = 0;
+                });
+                
+                $.ajax({
+                    url : "http://" + document.domain + ":" + location.port + "/relaunch_script",
                 });
             }
         }
