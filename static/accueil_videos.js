@@ -65,8 +65,8 @@ $(document).ready(function(){
         }
     );
 
-    // socket.on("launch", function (data) {
-    //     launch_video(data.nom_video);
-    //     console.log("launched video" + data.nom_video);
-    // });
+    socket.on("launch", function (data) {
+        launch_video(data.nom_video);
+        console.log("launched video" + data.nom_video);
+    });
 });

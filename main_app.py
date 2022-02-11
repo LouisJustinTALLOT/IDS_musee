@@ -5,12 +5,13 @@ import time
 import pygame # Audio mixer
 import speech_recognition as sr
 from gtts import gTTS
-
-import requests
+from flask_socketio import SocketIO
 
 
 language = 'fr'
 mic = sr.Microphone()
+
+socket = SocketIO()
 
 
 
@@ -62,36 +63,37 @@ def respond(response):
 
     # greetings
     global mediaPlay
+    global socket
     global stop_listening
 
     if there_exists(["présentation", "vidéo de présentation", "introduction", "présentation", "présentation générale", "présentation générale du musée"], response):
         play("Bonjour chers visiteurs, bienvenue au Musée de Minéralogie.")
         #### Launch video
-        requests.get("http://localhost:5000/launch_video", {"vid_name": "presentation_musee"})
+        socket.emit("launch_video", {"vid_name": "presentation_musee"})
         stop_listening()
 
     if there_exists(['sépiolite', "présentation de la sépiolite"], response):
         play("Voici la vidéo sur la sépiolite")
         #### Launch video
-        requests.get("http://localhost:5000/launch_video", {"vid_name": "sepiolite"})
+        socket.emit("launch_video", {"vid_name": "sepiolite"})
         stop_listening()
 
     if there_exists(['histoire', 'musée',"histoire du musée et de l'école", "histoire de l'école", "vidéo sur l'histoire"], response):
         play("Voici la vidéo sur l'histoire du musée")
         #### Launch video
-        requests.get("http://localhost:5000/launch_video", {"vid_name": "histoire"})
+        socket.emit("launch_video", {"vid_name": "histoire"})
         stop_listening()
 
     if there_exists(['calcite', "présentation de la calcite"], response):
         play("Voici la vidéo sur la calcite")
         #### Launch video
-        requests.get("http://localhost:5000/launch_video", {"vid_name": "calcite"})
+        socket.emit("launch_video", {"vid_name": "calcite"})
         stop_listening()
 
     if there_exists(['azurite', "présentation de la azurite"], response):
         play("Voici la vidéo sur la azurite")
         #### Launch video
-        requests.get("http://localhost:5000/launch_video", {"vid_name": "azurite"})
+        socket.emit("launch_video", {"vid_name": "azurite"})
         stop_listening()
 
 #####

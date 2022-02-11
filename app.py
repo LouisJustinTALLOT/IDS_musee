@@ -1,9 +1,12 @@
 from flask import Flask, render_template
+from flask_socketio import SocketIO
 
 # create the Flask app
 app = Flask(__name__)
+socket = SocketIO(app)
 
 import main_app
+main_app.socket = socket
 
 @app.route('/')
 def index():
@@ -18,4 +21,4 @@ def relaunch_script():
 
 if __name__=="__main__":
     print("Starting app...")
-    app.run(host="0.0.0.0", port=5000)
+    socket.run(app, host="0.0.0.0", port=5000)
