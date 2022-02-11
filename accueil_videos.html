@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Louis-Justin Tallot" />
+    <title>Accueil du Musée de Minéralogie</title>
+
+    <link rel="stylesheet" href="static/accueil_videos.css" />
+    <script src="static/socketio.min.js"></script>
+    <script src="static/jquery-3.6.0.min.js"></script>
+    <script src="static/accueil_videos.js" async></script>
+  </head>
+  <body>
+    <div>
+        <span id="message_bonjour">
+            Bienvenue au Musée de Minéralogie de l'École des Mines de Paris !
+        </span>
+      
+        <div id="container_videos">
+            <div class="link_video" id="presentation_musee">
+                <img src="static/presentation_musee.png" />
+            </div>
+            <div class="link_video" id="histoire">
+                <img src="static/histoire.png" />
+            </div>
+            <br>
+            <div class="link_video" id="sepiolite">
+                <img src="static/sepiolite.png" />
+            </div>
+            <div class="link_video" id="calcite">
+                <img src="static/calcite.png" />
+            </div>
+            <div class="link_video" id="azurite">
+                <img src="static/azurite.png" />
+            </div>
+        </div>
+
+        <div class="one_video" id="video_presentation_musee">
+            <video disablePictureInPicture preload="none">
+                <source src="static/presentation_musee.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="one_video" id="video_histoire">
+            <video disablePictureInPicture preload="none">
+                <source src="static/histoire.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="one_video" id="video_sepiolite">
+            <video disablePictureInPicture preload="none">
+                <source src="static/sepiolite.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="one_video" id="video_calcite">
+            <video disablePictureInPicture preload="none">
+                <source src="static/calcite.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="one_video" id="video_azurite">
+            <video disablePictureInPicture preload="none">
+                <source src="static/azurite.mp4" type="video/mp4">
+            </video>
+        </div>
+
+
+        <span id="instructions">
+            Cliquez sur une vidéo pour la visionner
+            <br>
+            <small>
+                Quand la vidéo est lancée, cliquez sur les côtés
+                pour revenir à la page d'accueil.
+            </small>
+        </span>
+    </div>
+  </body>
+</html>
