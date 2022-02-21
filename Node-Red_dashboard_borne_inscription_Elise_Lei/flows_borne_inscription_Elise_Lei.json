@@ -1,0 +1,5392 @@
+[
+    {
+        "id": "fe39c139f5d28cd6",
+        "type": "tab",
+        "label": "Interface",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6e6d089bd573eff6",
+        "type": "tab",
+        "label": "UpdateData",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2bedca4f534fe738",
+        "type": "tab",
+        "label": "UpdateToday",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "fe8f37d1.2cdcd",
+        "type": "tab",
+        "label": "Draft",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "1834c4feb31e866d",
+        "type": "subflow",
+        "name": "ListOfMatches",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 240,
+                "wires": [
+                    {
+                        "id": "bdb1d4a6dbb48906"
+                    },
+                    {
+                        "id": "af941be38e72a9e1"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 900,
+                "y": 240,
+                "wires": [
+                    {
+                        "id": "c90fad3caafb31f0",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "d0d1aaae96b75771",
+        "type": "subflow",
+        "name": "GetVisitors_1day",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 220,
+                "wires": [
+                    {
+                        "id": "39eaf93035f856a3"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1520,
+                "y": 200,
+                "wires": [
+                    {
+                        "id": "a5dbb1c1017e1f2a",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "0d7d4b85159076ca",
+        "type": "subflow",
+        "name": "KeepNewVisitors",
+        "info": "Takes an array, returns one without the already signed up visitors",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 240,
+                "wires": [
+                    {
+                        "id": "d0658a7f1dbe506f"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1240,
+                "y": 240,
+                "wires": [
+                    {
+                        "id": "c33ec29a6a39d63f",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "df14704212ce2732",
+        "type": "subflow",
+        "name": "ClearToday",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 40,
+                "y": 200,
+                "wires": [
+                    {
+                        "id": "1389259adbe6e89b"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1840,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "7234b998f9b7f18f",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "1faf41ee1428034d",
+        "type": "group",
+        "z": "fe39c139f5d28cd6",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "b671462a4dcb88f4",
+            "726cfdb4887af20c",
+            "a349017057c82a99",
+            "ca901e2e31322e26",
+            "96d2e06b3866d817",
+            "3c0f9abc4b14a601",
+            "84829145e457c8bb",
+            "c6c84e9e146db040",
+            "37e8cfa4ff31828c",
+            "76b49ba883345927",
+            "08e030d059af9b65",
+            "b86a125d2b31aae9",
+            "f75b2082e453878b",
+            "2bc4bdcae5e460a2",
+            "e4c438fe5ab2bb81",
+            "1844668dcb2e0ea8",
+            "f38ea71470c13f4c",
+            "c7dcb97dc7eb4419"
+        ],
+        "x": 14,
+        "y": 1139,
+        "w": 1372,
+        "h": 362
+    },
+    {
+        "id": "a4fa65b16823e850",
+        "type": "group",
+        "z": "fe39c139f5d28cd6",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "ff7879234e6dd070",
+            "6a2a3c57844e6e2f",
+            "2982dff7a43e525e",
+            "db55ee3cee297b29",
+            "4d036e234e264172",
+            "534fe6fb717f2307",
+            "10e1e0e2fad95f3e",
+            "2c92a8c0b1bd3379",
+            "31836958e92b4f93",
+            "7d726fca4ff36dd4",
+            "794628c792b06f20",
+            "9cb6e08f507ac8d7",
+            "9763008b5d7d1d62",
+            "60d21870b99587fe",
+            "a76beeded350cbcb",
+            "69e1c3f58533ed8c"
+        ],
+        "x": 14,
+        "y": 719,
+        "w": 872,
+        "h": 362
+    },
+    {
+        "id": "93ea0c758c0cf52c",
+        "type": "group",
+        "z": "fe39c139f5d28cd6",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "d1a07350ea7259e6",
+            "ec61e76b7bd2b506",
+            "d7ee09c4b02e13ad",
+            "fb7b5f9840b82d69",
+            "749c663f8c6ec260",
+            "e73263f22333820e",
+            "5b7d30c12b38e6a0",
+            "870e21e4133d186a",
+            "b0d8355ae08dae7c",
+            "46f4b98480f639a1",
+            "67f6c22765974436",
+            "5da75b42017022ae",
+            "4706a33612527cde"
+        ],
+        "x": 14,
+        "y": 339,
+        "w": 912,
+        "h": 302
+    },
+    {
+        "id": "9184495656936359",
+        "type": "ui_tab",
+        "name": "Inscription",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "1d4f288bc9357fec",
+        "type": "ui_group",
+        "name": "inscrit?",
+        "tab": "9184495656936359",
+        "order": 2,
+        "disp": false,
+        "width": "15",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7a40382c808ff9a3",
+        "type": "ui_group",
+        "name": "form-verif",
+        "tab": "9184495656936359",
+        "order": 3,
+        "disp": false,
+        "width": "15",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "19b779125cf2e603",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Musée de Minéralogie",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "true",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 4,
+                "py": 4
+            }
+        }
+    },
+    {
+        "id": "e947c1aeadb9821c",
+        "type": "ui_group",
+        "name": "form-inscription",
+        "tab": "9184495656936359",
+        "order": 5,
+        "disp": false,
+        "width": "15",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6c7199f554b64b5d",
+        "type": "gauth",
+        "name": "service@ids-musee.iam.gserviceaccount.com"
+    },
+    {
+        "id": "b64f8a172d84f3cb",
+        "type": "ui_group",
+        "name": "accueil",
+        "tab": "9184495656936359",
+        "order": 1,
+        "disp": false,
+        "width": "15",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "295810ea5ac2b9a1",
+        "type": "ui_group",
+        "name": "valide",
+        "tab": "9184495656936359",
+        "order": 6,
+        "disp": false,
+        "width": "15",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c5df3fe2a397e369",
+        "type": "ui_group",
+        "name": "error",
+        "tab": "9184495656936359",
+        "order": 7,
+        "disp": false,
+        "width": "15",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3f900da39bb60c9a",
+        "type": "ui_group",
+        "name": "form-verif2",
+        "tab": "9184495656936359",
+        "order": 4,
+        "disp": false,
+        "width": "15",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4323a7d01b40fcb5",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "b64f8a172d84f3cb",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a64d428236da0f18",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "b64f8a172d84f3cb",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9a78ead8262446a0",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "b64f8a172d84f3cb",
+        "order": 4,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "acc00201431f3c36",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "b64f8a172d84f3cb",
+        "order": 6,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "725d0ca016b61587",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "1d4f288bc9357fec",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6febee8bcbf440df",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "1d4f288bc9357fec",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3925c6c5ab552308",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "1d4f288bc9357fec",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "1737da9d5f6cdc68",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "1d4f288bc9357fec",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a9bd9276d8305da5",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "1d4f288bc9357fec",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e4373ee6ca94b9ac",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "7a40382c808ff9a3",
+        "order": 3,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "e3836d3d5028f5cf",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "7a40382c808ff9a3",
+        "order": 4,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "ee569d4a6549d586",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "7a40382c808ff9a3",
+        "order": 6,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "a84e782472413541",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "7a40382c808ff9a3",
+        "order": 7,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "df5c80002fa12d05",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "7a40382c808ff9a3",
+        "order": 9,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "db9e3fbf2ef6b07c",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "3f900da39bb60c9a",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c77df0c9456236ef",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "3f900da39bb60c9a",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "4abce574c665c569",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "3f900da39bb60c9a",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8a48f868d3228f5e",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "3f900da39bb60c9a",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "7e389215e691cc05",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "3f900da39bb60c9a",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "2159a7c481e75876",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "3f900da39bb60c9a",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "64ed80a678fa9f26",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "3f900da39bb60c9a",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c5c262656bb48129",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "3f900da39bb60c9a",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3ea65fb4a2cdfb55",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "3f900da39bb60c9a",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b6ae9692d514a7b2",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "3f900da39bb60c9a",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "aab98ccb7641a87b",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "3f900da39bb60c9a",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f0b8040c54ea990c",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "3f900da39bb60c9a",
+        "order": 14,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "da5cf01abec3c45b",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "3f900da39bb60c9a",
+        "order": 15,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b250c25f4bc85a56",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "3f900da39bb60c9a",
+        "order": 17,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "0cae159616345a06",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "e947c1aeadb9821c",
+        "order": 1,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "cdcf9827a8d64f96",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "e947c1aeadb9821c",
+        "order": 3,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "40e709f2175a72a3",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "e947c1aeadb9821c",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6a5ee7aaf89e0538",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "e947c1aeadb9821c",
+        "order": 7,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "df840596bf1d90f4",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "295810ea5ac2b9a1",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "7ba8ed3454e4dcf7",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "295810ea5ac2b9a1",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "687cf4be31c0965e",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "c5df3fe2a397e369",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "00b5dbf17e677c1b",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "c5df3fe2a397e369",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3f0595adff7a0349",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "c5df3fe2a397e369",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8387751e46ede5cd",
+        "type": "ui_spacer",
+        "z": "fe39c139f5d28cd6",
+        "name": "spacer",
+        "group": "c5df3fe2a397e369",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "bdb1d4a6dbb48906",
+        "type": "change",
+        "z": "1834c4feb31e866d",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "input",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 190,
+        "y": 240,
+        "wires": [
+            [
+                "9dfde6e4e815e656"
+            ]
+        ]
+    },
+    {
+        "id": "4e4fec3f845854bf",
+        "type": "GSheet",
+        "z": "1834c4feb31e866d",
+        "creds": "6c7199f554b64b5d",
+        "method": "get",
+        "action": "",
+        "sheet": "${DATA}",
+        "cells": "Feuille1",
+        "flatten": false,
+        "name": "",
+        "x": 490,
+        "y": 340,
+        "wires": [
+            [
+                "4be5d871566cc115",
+                "be719efeac876f3d",
+                "3d7e52a0975b4ab1"
+            ]
+        ]
+    },
+    {
+        "id": "af941be38e72a9e1",
+        "type": "debug",
+        "z": "1834c4feb31e866d",
+        "d": true,
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 250,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "4be5d871566cc115",
+        "type": "debug",
+        "z": "1834c4feb31e866d",
+        "d": true,
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "c90fad3caafb31f0",
+        "type": "function",
+        "z": "1834c4feb31e866d",
+        "name": "",
+        "func": "const d = new Date();\nconst strDate = `${d.getFullYear()}-${(d.getMonth()+1).toString().padStart(2,'0')}-${d.getDate().toString().padStart(2,'0')}`;\nconst data = global.get(\"_datasheet\");\n\n//Mise au format adéquat\nmsg.input.Nom = msg.input.Nom.toUpperCase();\nmsg.input.Prenom = msg.input.Prenom.toUpperCase();\nmsg.input.Email = msg.input.Email.toLowerCase();\n\nlet match = [];\nlet matchDate = [];\nlet iMatch = [];\nlet iMatchDate = [];\n\nfor (let i=1; i<data.length; i++) {\n    //If last name or email match\n    if (data[i][1]==msg.input.Nom || data[i][3]==msg.input.Email) {\n        match.push(data[i]);\n        iMatch.push(i);\n        \n        //If date corresponds\n        if (data[i][6]==strDate) {\n            matchDate.push(data[i]);\n            iMatchDate.push(i);\n        }\n    }\n}\n\nif (matchDate.length == 0) {\n    if (match.length > 0) {\n        msg.people = match;\n        msg.indPeople = iMatch;\n        msg.topic = \"GOTIT\";\n    } else {\n        msg.payload = {};\n        msg.topic = \"error\";\n    }\n} else {\n    msg.people = matchDate;\n    msg.indPeople = iMatchDate;\n    msg.topic = \"GOTIT\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "be719efeac876f3d",
+        "type": "debug",
+        "z": "1834c4feb31e866d",
+        "d": true,
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "input",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "3d7e52a0975b4ab1",
+        "type": "change",
+        "z": "1834c4feb31e866d",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "_datasheet",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 580,
+        "y": 300,
+        "wires": [
+            [
+                "c90fad3caafb31f0"
+            ]
+        ]
+    },
+    {
+        "id": "9dfde6e4e815e656",
+        "type": "switch",
+        "z": "1834c4feb31e866d",
+        "name": "",
+        "property": "_datasheet",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "array",
+                "vt": "array"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 350,
+        "y": 240,
+        "wires": [
+            [
+                "c90fad3caafb31f0"
+            ],
+            [
+                "4e4fec3f845854bf"
+            ]
+        ]
+    },
+    {
+        "id": "d84deb5306acfb11",
+        "type": "http request",
+        "z": "d0d1aaae96b75771",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "senderr": false,
+        "x": 410,
+        "y": 80,
+        "wires": [
+            [
+                "a4935c3fa186eeb4"
+            ]
+        ]
+    },
+    {
+        "id": "a4935c3fa186eeb4",
+        "type": "csv",
+        "z": "d0d1aaae96b75771",
+        "name": "",
+        "sep": ";",
+        "hdrin": true,
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "\\r\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": true,
+        "include_null_values": true,
+        "x": 590,
+        "y": 80,
+        "wires": [
+            [
+                "243487c8ca93de3e"
+            ]
+        ]
+    },
+    {
+        "id": "025893f082c32c5a",
+        "type": "csv",
+        "z": "d0d1aaae96b75771",
+        "name": "",
+        "sep": ";",
+        "hdrin": true,
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": true,
+        "include_null_values": true,
+        "x": 590,
+        "y": 120,
+        "wires": [
+            [
+                "70a1c943e82ab5b0"
+            ]
+        ]
+    },
+    {
+        "id": "49fd412577abff5f",
+        "type": "csv",
+        "z": "d0d1aaae96b75771",
+        "name": "",
+        "sep": ";",
+        "hdrin": true,
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": true,
+        "include_null_values": true,
+        "x": 590,
+        "y": 160,
+        "wires": [
+            [
+                "1938fbf52a015e2c"
+            ]
+        ]
+    },
+    {
+        "id": "6f33d46a5f177018",
+        "type": "csv",
+        "z": "d0d1aaae96b75771",
+        "name": "",
+        "sep": ";",
+        "hdrin": true,
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": true,
+        "include_null_values": true,
+        "x": 590,
+        "y": 200,
+        "wires": [
+            [
+                "bd28cb091b71a527"
+            ]
+        ]
+    },
+    {
+        "id": "93347771b8706b21",
+        "type": "csv",
+        "z": "d0d1aaae96b75771",
+        "name": "",
+        "sep": ";",
+        "hdrin": true,
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": true,
+        "include_null_values": true,
+        "x": 590,
+        "y": 240,
+        "wires": [
+            [
+                "889785efe66d4a12"
+            ]
+        ]
+    },
+    {
+        "id": "1d74d0cc5ea48035",
+        "type": "csv",
+        "z": "d0d1aaae96b75771",
+        "name": "",
+        "sep": ";",
+        "hdrin": true,
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": true,
+        "include_null_values": true,
+        "x": 590,
+        "y": 280,
+        "wires": [
+            [
+                "98bfb6c8553c2241"
+            ]
+        ]
+    },
+    {
+        "id": "cd7fef1688050cea",
+        "type": "csv",
+        "z": "d0d1aaae96b75771",
+        "name": "",
+        "sep": ";",
+        "hdrin": true,
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": true,
+        "include_null_values": true,
+        "x": 590,
+        "y": 320,
+        "wires": [
+            [
+                "edd5f7c7137bbe3e"
+            ]
+        ]
+    },
+    {
+        "id": "da848ef1fd0a3177",
+        "type": "csv",
+        "z": "d0d1aaae96b75771",
+        "name": "",
+        "sep": ";",
+        "hdrin": true,
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": true,
+        "include_null_values": true,
+        "x": 590,
+        "y": 360,
+        "wires": [
+            [
+                "82306dfe87c4f2c4"
+            ]
+        ]
+    },
+    {
+        "id": "243487c8ca93de3e",
+        "type": "function",
+        "z": "d0d1aaae96b75771",
+        "name": "Extract visitors",
+        "func": "const n = msg.payload.length;\nlet result = [];\n\nfor (let i=1; i<n; i++) {\n    if (msg.payload[i].Nom.trim() != \"\") {\n        result.push(msg.payload[i]);\n    }\n}\n\nmsg.payload = result;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 80,
+        "wires": [
+            [
+                "db1d3d30922fc532"
+            ]
+        ]
+    },
+    {
+        "id": "70a1c943e82ab5b0",
+        "type": "function",
+        "z": "d0d1aaae96b75771",
+        "name": "Extract visitors",
+        "func": "const n = msg.payload.length;\nlet result = [];\n\nfor (let i=1; i<n; i++) {\n    if (msg.payload[i].Nom.trim() != \"\") {\n        result.push(msg.payload[i]);\n    }\n}\n\nmsg.payload = result;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 120,
+        "wires": [
+            [
+                "db1d3d30922fc532"
+            ]
+        ]
+    },
+    {
+        "id": "1938fbf52a015e2c",
+        "type": "function",
+        "z": "d0d1aaae96b75771",
+        "name": "Extract visitors",
+        "func": "const n = msg.payload.length;\nlet result = [];\n\nfor (let i=1; i<n; i++) {\n    if (msg.payload[i].Nom.trim() != \"\") {\n        result.push(msg.payload[i]);\n    }\n}\n\nmsg.payload = result;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 160,
+        "wires": [
+            [
+                "db1d3d30922fc532"
+            ]
+        ]
+    },
+    {
+        "id": "bd28cb091b71a527",
+        "type": "function",
+        "z": "d0d1aaae96b75771",
+        "name": "Extract visitors",
+        "func": "const n = msg.payload.length;\nlet result = [];\n\nfor (let i=1; i<n; i++) {\n    if (msg.payload[i].Nom.trim() != \"\") {\n        result.push(msg.payload[i]);\n    }\n}\n\nmsg.payload = result;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 200,
+        "wires": [
+            [
+                "db1d3d30922fc532"
+            ]
+        ]
+    },
+    {
+        "id": "889785efe66d4a12",
+        "type": "function",
+        "z": "d0d1aaae96b75771",
+        "name": "Extract visitors",
+        "func": "const n = msg.payload.length;\nlet result = [];\n\nfor (let i=1; i<n; i++) {\n    if (msg.payload[i].Nom.trim() != \"\") {\n        result.push(msg.payload[i]);\n    }\n}\n\nmsg.payload = result;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 240,
+        "wires": [
+            [
+                "db1d3d30922fc532"
+            ]
+        ]
+    },
+    {
+        "id": "98bfb6c8553c2241",
+        "type": "function",
+        "z": "d0d1aaae96b75771",
+        "name": "Extract visitors",
+        "func": "const n = msg.payload.length;\nlet result = [];\n\nfor (let i=1; i<n; i++) {\n    if (msg.payload[i].Nom.trim() != \"\") {\n        result.push(msg.payload[i]);\n    }\n}\n\nmsg.payload = result;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 280,
+        "wires": [
+            [
+                "db1d3d30922fc532"
+            ]
+        ]
+    },
+    {
+        "id": "edd5f7c7137bbe3e",
+        "type": "function",
+        "z": "d0d1aaae96b75771",
+        "name": "Extract visitors",
+        "func": "const n = msg.payload.length;\nlet result = [];\n\nfor (let i=1; i<n; i++) {\n    if (msg.payload[i].Nom.trim() != \"\") {\n        result.push(msg.payload[i]);\n    }\n}\n\nmsg.payload = result;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 320,
+        "wires": [
+            [
+                "db1d3d30922fc532"
+            ]
+        ]
+    },
+    {
+        "id": "82306dfe87c4f2c4",
+        "type": "function",
+        "z": "d0d1aaae96b75771",
+        "name": "Extract visitors",
+        "func": "const n = msg.payload.length;\nlet result = [];\n\nfor (let i=1; i<n; i++) {\n    if (msg.payload[i].Nom.trim() != \"\") {\n        result.push(msg.payload[i]);\n    }\n}\n\nmsg.payload = result;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 360,
+        "wires": [
+            [
+                "db1d3d30922fc532"
+            ]
+        ]
+    },
+    {
+        "id": "db1d3d30922fc532",
+        "type": "function",
+        "z": "d0d1aaae96b75771",
+        "name": "Combine all arrays",
+        "func": "const nbInputs = 8;\n\ncontext.handled = context.handled || Array(nbInputs).fill(false);\ncontext.people = context.people || [];\n\nif (!context.handled[msg.topic]) {\n    context.handled[msg.topic] = true;\n    context.people = context.people.concat(msg.payload);\n}\nmsg = null;\n\nif (context.handled.every((elem) => elem)) {\n    let result = context.people;\n    context.handled = null;\n    context.people = null;\n    return {payload: result};\n} else return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 220,
+        "wires": [
+            [
+                "48f3f0e0d4705fbf",
+                "a5dbb1c1017e1f2a"
+            ]
+        ]
+    },
+    {
+        "id": "39eaf93035f856a3",
+        "type": "function",
+        "z": "d0d1aaae96b75771",
+        "name": "Setup URLs",
+        "func": "flow.set(\"date\", msg.date);\nflow.set(\"tmstp\", msg.payload);\n\nconst n = node.outputCount; //nombre de créneaux par jour\nlet d = new Date(msg.payload);\n\nlet date = `${d.getFullYear()}-${(d.getMonth()+1).toString().padStart(2, '0')}-${d.getDate().toString().padStart(2, '0')}`;\n\nconst li = [];\nlet newMsg;\n\nfor (let i=1; i<=n; i++) {\n    newMsg = {url:`https://www.musee.minesparis.psl.eu/bin/inscription/admin/export.php?c=${i}&d=${date}`, topic: i-1}\n    li.push(newMsg);\n}\n\nreturn li;",
+        "outputs": 8,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 190,
+        "y": 220,
+        "wires": [
+            [
+                "d84deb5306acfb11"
+            ],
+            [
+                "e1ca0b2e31f52212"
+            ],
+            [
+                "39ac88169a90eea8"
+            ],
+            [
+                "55aba0c259bc916a"
+            ],
+            [
+                "381bb702ebb34705"
+            ],
+            [
+                "7e7a0a146716f382"
+            ],
+            [
+                "1e4a3f3530267f44"
+            ],
+            [
+                "121621a6b109fcf7"
+            ]
+        ]
+    },
+    {
+        "id": "48f3f0e0d4705fbf",
+        "type": "debug",
+        "z": "d0d1aaae96b75771",
+        "d": true,
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1270,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "a5dbb1c1017e1f2a",
+        "type": "function",
+        "z": "d0d1aaae96b75771",
+        "name": "Formatage",
+        "func": "msg.date = flow.get(\"date\");\nmsg.tmstp = flow.get(\"tmstp\");\n\nlet temp;\nconst d = new Date();\nconst strDate = `${d.getFullYear()}` + (d.getMonth()+1).toString().padStart(2,'0') + (d.getDate()).toString().padStart(2,'0') + (d.getHours()).toString().padStart(2,'0') + (d.getMinutes()).toString().padStart(2,'0');\n\nif (msg.payload.length==0) {\n    return msg;\n} else {\n    const n = msg.payload.length;\n    const keys = Object.keys(msg.payload[0]);\n    \n    for (let i=0; i<n; i++) {\n        if (typeof(msg.payload[i].Tel) != \"string\") {\n            msg.payload[i].Tel = msg.payload[i].Tel.toString().padStart(10, '0');\n        }\n        for (const key of keys) {\n            if (msg.payload[i][key] == null) {\n                msg.payload[i][key] = \"\";\n            }\n            if (key != \"Prix (euros)\") {\n                msg.payload[i][key] = msg.payload[i][key].trim();\n            }\n        }\n        msg.payload[i].Nom = msg.payload[i].Nom.toUpperCase();\n        msg.payload[i].Prenom = msg.payload[i].Prenom.toUpperCase();\n        msg.payload[i].Email = msg.payload[i].Email.toLowerCase();\n        msg.payload[i].ID = strDate + global.get(\"counter\").toString().padStart(4,'0');\n        global.set(\"counter\", global.get(\"counter\")+1);\n        delete msg.payload[i].Signature;\n        \n        msg.payload[i] = Object.values(msg.payload[i]);\n        temp = msg.payload[i].pop();\n        msg.payload[i].unshift(temp);\n    }\n    \n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1270,
+        "y": 220,
+        "wires": [
+            [
+                "85fab56119aadebf"
+            ]
+        ]
+    },
+    {
+        "id": "85fab56119aadebf",
+        "type": "debug",
+        "z": "d0d1aaae96b75771",
+        "d": true,
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1470,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "f689e1ccf207c349",
+        "type": "comment",
+        "z": "d0d1aaae96b75771",
+        "name": "Input: timestamp (time in ms since 1/1/1900)",
+        "info": "",
+        "x": 210,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "e1ca0b2e31f52212",
+        "type": "http request",
+        "z": "d0d1aaae96b75771",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "senderr": false,
+        "x": 410,
+        "y": 120,
+        "wires": [
+            [
+                "025893f082c32c5a"
+            ]
+        ]
+    },
+    {
+        "id": "39ac88169a90eea8",
+        "type": "http request",
+        "z": "d0d1aaae96b75771",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "senderr": false,
+        "x": 410,
+        "y": 160,
+        "wires": [
+            [
+                "49fd412577abff5f"
+            ]
+        ]
+    },
+    {
+        "id": "55aba0c259bc916a",
+        "type": "http request",
+        "z": "d0d1aaae96b75771",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "senderr": false,
+        "x": 410,
+        "y": 200,
+        "wires": [
+            [
+                "6f33d46a5f177018"
+            ]
+        ]
+    },
+    {
+        "id": "381bb702ebb34705",
+        "type": "http request",
+        "z": "d0d1aaae96b75771",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "senderr": false,
+        "x": 410,
+        "y": 240,
+        "wires": [
+            [
+                "93347771b8706b21"
+            ]
+        ]
+    },
+    {
+        "id": "7e7a0a146716f382",
+        "type": "http request",
+        "z": "d0d1aaae96b75771",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "senderr": false,
+        "x": 410,
+        "y": 280,
+        "wires": [
+            [
+                "1d74d0cc5ea48035"
+            ]
+        ]
+    },
+    {
+        "id": "1e4a3f3530267f44",
+        "type": "http request",
+        "z": "d0d1aaae96b75771",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "senderr": false,
+        "x": 410,
+        "y": 320,
+        "wires": [
+            [
+                "cd7fef1688050cea"
+            ]
+        ]
+    },
+    {
+        "id": "121621a6b109fcf7",
+        "type": "http request",
+        "z": "d0d1aaae96b75771",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "basic",
+        "senderr": false,
+        "x": 410,
+        "y": 360,
+        "wires": [
+            [
+                "da848ef1fd0a3177"
+            ]
+        ]
+    },
+    {
+        "id": "ad462ee3253247e5",
+        "type": "GSheet",
+        "z": "0d7d4b85159076ca",
+        "creds": "6c7199f554b64b5d",
+        "method": "get",
+        "action": "",
+        "sheet": "${DATA}",
+        "cells": "Feuille1",
+        "flatten": false,
+        "name": "",
+        "x": 570,
+        "y": 300,
+        "wires": [
+            [
+                "678960abbbefee4a",
+                "6aca11a6c61c2ca1"
+            ]
+        ]
+    },
+    {
+        "id": "678960abbbefee4a",
+        "type": "debug",
+        "z": "0d7d4b85159076ca",
+        "d": true,
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "6409891b264a4f73",
+        "type": "switch",
+        "z": "0d7d4b85159076ca",
+        "name": "",
+        "property": "_datasheet",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "boolean",
+                "vt": "boolean"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 450,
+        "y": 240,
+        "wires": [
+            [
+                "c33ec29a6a39d63f",
+                "39b3979a37613522"
+            ],
+            [
+                "ad462ee3253247e5"
+            ]
+        ]
+    },
+    {
+        "id": "6aca11a6c61c2ca1",
+        "type": "change",
+        "z": "0d7d4b85159076ca",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "_datasheet",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 780,
+        "y": 300,
+        "wires": [
+            [
+                "c33ec29a6a39d63f"
+            ]
+        ]
+    },
+    {
+        "id": "d0658a7f1dbe506f",
+        "type": "change",
+        "z": "0d7d4b85159076ca",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "retrieved",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 210,
+        "y": 240,
+        "wires": [
+            [
+                "6409891b264a4f73"
+            ]
+        ]
+    },
+    {
+        "id": "39b3979a37613522",
+        "type": "debug",
+        "z": "0d7d4b85159076ca",
+        "d": true,
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "c33ec29a6a39d63f",
+        "type": "function",
+        "z": "0d7d4b85159076ca",
+        "name": "Check if already in data",
+        "func": "let finalList = [];\n//const nK = 4;\nconst indKeys = [1, 2, 6, 7];\n//const testKeys = [\"Nom\", \"Prenom\", \"Date visite\", \"Creneau\"];\nconst data = global.get(\"_datasheet\");\nlet temp = -1;\n\nfunction filtre(elem) {\n    let test = true;\n    for (const i of indKeys) {\n        test = test && (elem[i] == this[i]);\n    }\n    return test;\n}\n\nfor (const person of msg.retrieved) {\n    temp = data.findIndex(filtre, person)\n    if (temp === -1) {\n        finalList.push(person);\n    }\n}\n\nmsg.payload = finalList;\nmsg.topic = \"data\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 240,
+        "wires": [
+            [
+                "c846f975d28e41fd"
+            ]
+        ]
+    },
+    {
+        "id": "c846f975d28e41fd",
+        "type": "debug",
+        "z": "0d7d4b85159076ca",
+        "d": true,
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1270,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "b14003773248cb03",
+        "type": "GSheet",
+        "z": "df14704212ce2732",
+        "creds": "6c7199f554b64b5d",
+        "method": "get",
+        "action": "",
+        "sheet": "${TODAY}",
+        "cells": "Feuille1",
+        "flatten": false,
+        "name": "",
+        "x": 370,
+        "y": 200,
+        "wires": [
+            [
+                "24b5c4c931aea455",
+                "355bf74685668109"
+            ]
+        ],
+        "info": "Read the content of the Google sheet \"Today\""
+    },
+    {
+        "id": "24b5c4c931aea455",
+        "type": "debug",
+        "z": "df14704212ce2732",
+        "d": true,
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 550,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "9c3af185a7f5de7c",
+        "type": "function",
+        "z": "df14704212ce2732",
+        "name": "",
+        "func": "const d = new Date(msg.tmstp);\nlet strDate = `${d.getFullYear()}/${d.getMonth()+1}/${d.getDate()}`;\nmsg.today = strDate;\n\n\nif (msg.payload[0][11] == strDate) {\n    return [msg, null, null];\n} else if (msg.payload.length > 1) {\n    msg.cells = `Feuille1!A2:K${msg.payload.length}`;\n    return [null, null, msg];\n} else {\n    return [null, msg, null];\n}",
+        "outputs": 3,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 200,
+        "wires": [
+            [
+                "cce1c931ca50ea03"
+            ],
+            [
+                "704c9989af4e3a2b"
+            ],
+            [
+                "db5745121be064a7"
+            ]
+        ],
+        "info": "date up to date = 1;\nempty but incorrect date = 2;\nwith content but incorrect date = 3"
+    },
+    {
+        "id": "355bf74685668109",
+        "type": "change",
+        "z": "df14704212ce2732",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "_todaysheet",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 580,
+        "y": 200,
+        "wires": [
+            [
+                "9c3af185a7f5de7c"
+            ]
+        ]
+    },
+    {
+        "id": "704c9989af4e3a2b",
+        "type": "change",
+        "z": "df14704212ce2732",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "today",
+                "tot": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "_todaysheet",
+                "pt": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1100,
+        "y": 200,
+        "wires": [
+            [
+                "f6a09e648dbcd344"
+            ]
+        ]
+    },
+    {
+        "id": "cce1c931ca50ea03",
+        "type": "change",
+        "z": "df14704212ce2732",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "test",
+                "pt": "msg",
+                "to": "unchanged",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1090,
+        "y": 140,
+        "wires": [
+            [
+                "7234b998f9b7f18f"
+            ]
+        ]
+    },
+    {
+        "id": "f6a09e648dbcd344",
+        "type": "GSheet",
+        "z": "df14704212ce2732",
+        "creds": "6c7199f554b64b5d",
+        "method": "update",
+        "action": "",
+        "sheet": "${DATA}",
+        "cells": "Feuille1!L1",
+        "flatten": false,
+        "name": "",
+        "x": 1290,
+        "y": 200,
+        "wires": [
+            [
+                "56d66b5f35c9d0cf",
+                "b6ecf1cd471de93d"
+            ]
+        ],
+        "info": "Update the date in the dedicated cell"
+    },
+    {
+        "id": "b6ecf1cd471de93d",
+        "type": "change",
+        "z": "df14704212ce2732",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "test",
+                "pt": "msg",
+                "to": "cleared",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1490,
+        "y": 200,
+        "wires": [
+            [
+                "7234b998f9b7f18f"
+            ]
+        ]
+    },
+    {
+        "id": "56d66b5f35c9d0cf",
+        "type": "debug",
+        "z": "df14704212ce2732",
+        "d": true,
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1450,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "957c7ee96857fcaf",
+        "type": "debug",
+        "z": "df14704212ce2732",
+        "d": true,
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1870,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "1389259adbe6e89b",
+        "type": "change",
+        "z": "df14704212ce2732",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "temp",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 160,
+        "y": 200,
+        "wires": [
+            [
+                "b14003773248cb03"
+            ]
+        ]
+    },
+    {
+        "id": "7234b998f9b7f18f",
+        "type": "change",
+        "z": "df14704212ce2732",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "temp",
+                "tot": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "temp",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1660,
+        "y": 140,
+        "wires": [
+            [
+                "957c7ee96857fcaf"
+            ]
+        ]
+    },
+    {
+        "id": "db5745121be064a7",
+        "type": "GSheet",
+        "z": "df14704212ce2732",
+        "creds": "6c7199f554b64b5d",
+        "method": "clear",
+        "action": "",
+        "sheet": "${DATA}",
+        "cells": "",
+        "flatten": false,
+        "name": "",
+        "x": 920,
+        "y": 280,
+        "wires": [
+            [
+                "704c9989af4e3a2b"
+            ]
+        ]
+    },
+    {
+        "id": "d1a07350ea7259e6",
+        "type": "ui_button",
+        "z": "fe39c139f5d28cd6",
+        "g": "93ea0c758c0cf52c",
+        "name": "",
+        "group": "1d4f288bc9357fec",
+        "order": 5,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Oui",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 90,
+        "y": 500,
+        "wires": [
+            [
+                "e73263f22333820e"
+            ]
+        ]
+    },
+    {
+        "id": "ec61e76b7bd2b506",
+        "type": "ui_button",
+        "z": "fe39c139f5d28cd6",
+        "g": "93ea0c758c0cf52c",
+        "name": "",
+        "group": "1d4f288bc9357fec",
+        "order": 7,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Non",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 90,
+        "y": 540,
+        "wires": [
+            [
+                "e73263f22333820e"
+            ]
+        ]
+    },
+    {
+        "id": "d7ee09c4b02e13ad",
+        "type": "comment",
+        "z": "fe39c139f5d28cd6",
+        "g": "93ea0c758c0cf52c",
+        "name": "Inscrit ?",
+        "info": "",
+        "x": 90,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "ff7879234e6dd070",
+        "type": "ui_form",
+        "z": "fe39c139f5d28cd6",
+        "g": "a4fa65b16823e850",
+        "name": "",
+        "label": "",
+        "group": "7a40382c808ff9a3",
+        "order": 5,
+        "width": 11,
+        "height": 1,
+        "options": [
+            {
+                "label": "Nom",
+                "value": "Nom",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Prénom",
+                "value": "Prenom",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Email",
+                "value": "Email",
+                "type": "email",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Nom": "",
+            "Prenom": "",
+            "Email": ""
+        },
+        "payload": "",
+        "submit": "Valider",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 90,
+        "y": 860,
+        "wires": [
+            [
+                "6a2a3c57844e6e2f",
+                "534fe6fb717f2307",
+                "a76beeded350cbcb"
+            ]
+        ]
+    },
+    {
+        "id": "fb7b5f9840b82d69",
+        "type": "ui_ui_control",
+        "z": "fe39c139f5d28cd6",
+        "g": "93ea0c758c0cf52c",
+        "name": "Go to inscription",
+        "events": "all",
+        "x": 780,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "749c663f8c6ec260",
+        "type": "ui_ui_control",
+        "z": "fe39c139f5d28cd6",
+        "g": "93ea0c758c0cf52c",
+        "name": "Go to verification",
+        "events": "all",
+        "x": 810,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e73263f22333820e",
+        "type": "switch",
+        "z": "fe39c139f5d28cd6",
+        "g": "93ea0c758c0cf52c",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 370,
+        "y": 520,
+        "wires": [
+            [
+                "5b7d30c12b38e6a0"
+            ],
+            [
+                "b0d8355ae08dae7c"
+            ]
+        ]
+    },
+    {
+        "id": "5b7d30c12b38e6a0",
+        "type": "change",
+        "z": "fe39c139f5d28cd6",
+        "g": "93ea0c758c0cf52c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":\"Inscription_form-verif\",\"hide\":\"Inscription_inscrit?\",\"focus\":true}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 580,
+        "y": 440,
+        "wires": [
+            [
+                "749c663f8c6ec260",
+                "46f4b98480f639a1"
+            ]
+        ]
+    },
+    {
+        "id": "870e21e4133d186a",
+        "type": "debug",
+        "z": "fe39c139f5d28cd6",
+        "g": "93ea0c758c0cf52c",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "b0d8355ae08dae7c",
+        "type": "change",
+        "z": "fe39c139f5d28cd6",
+        "g": "93ea0c758c0cf52c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":[\"Inscription_form-inscription\"],\"hide\":[\"Inscription_inscrit?\"],\"focus\":true}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 580,
+        "y": 600,
+        "wires": [
+            [
+                "fb7b5f9840b82d69",
+                "870e21e4133d186a"
+            ]
+        ]
+    },
+    {
+        "id": "b671462a4dcb88f4",
+        "type": "ui_form",
+        "z": "fe39c139f5d28cd6",
+        "g": "1faf41ee1428034d",
+        "name": "",
+        "label": "Inscription",
+        "group": "e947c1aeadb9821c",
+        "order": 6,
+        "width": 9,
+        "height": 1,
+        "options": [
+            {
+                "label": "Nom",
+                "value": "Nom",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Prénom",
+                "value": "Prenom",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Email",
+                "value": "Email",
+                "type": "email",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Téléphone",
+                "value": "Tel",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Entrées plein tarif 6€ (personne majeure en activité)",
+                "value": "plein",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Entrées tarif réduit 3€ (élève / étudiant / retraité.e / demandeur d'emploi / sans activité)",
+                "value": "reduit",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Gratuit (enfant de -12 ans, membre PSL, carte Icom)",
+                "value": "gratuit",
+                "type": "number",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "Nom": "",
+            "Prenom": "",
+            "Email": "",
+            "Tel": "",
+            "plein": "",
+            "reduit": "",
+            "gratuit": ""
+        },
+        "payload": "",
+        "submit": "Valider",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 110,
+        "y": 1280,
+        "wires": [
+            [
+                "726cfdb4887af20c",
+                "2bc4bdcae5e460a2"
+            ]
+        ]
+    },
+    {
+        "id": "46f4b98480f639a1",
+        "type": "debug",
+        "z": "fe39c139f5d28cd6",
+        "g": "93ea0c758c0cf52c",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "726cfdb4887af20c",
+        "type": "debug",
+        "z": "fe39c139f5d28cd6",
+        "g": "1faf41ee1428034d",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 330,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "6a2a3c57844e6e2f",
+        "type": "debug",
+        "z": "fe39c139f5d28cd6",
+        "g": "a4fa65b16823e850",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 290,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "67f6c22765974436",
+        "type": "ui_text",
+        "z": "fe39c139f5d28cd6",
+        "g": "93ea0c758c0cf52c",
+        "group": "1d4f288bc9357fec",
+        "order": 2,
+        "width": 13,
+        "height": 1,
+        "name": "",
+        "label": "Êtes-vous inscrit sur un créneau ?",
+        "format": "(Si vous ne savez plus, vous pouvez vérifier en cliquant sur \"Oui\".)",
+        "layout": "col-center",
+        "className": "",
+        "x": 180,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "d0425b2404ba6c0e",
+        "type": "ui_ui_control",
+        "z": "fe39c139f5d28cd6",
+        "name": "Display accueil",
+        "events": "all",
+        "x": 460,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cf84c2ec1f4ec5e8",
+        "type": "change",
+        "z": "fe39c139f5d28cd6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":\"Inscription_accueil\",\"hide\":[\"Inscription_inscrit?\",\"Inscription_form-verif\",\"Inscription_form-verif2\",\"Inscription_form-inscription\",\"Inscription_valide\",\"Inscription_error\"],\"focus\":true}}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "tPlein",
+                "pt": "global",
+                "to": "6",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "tReduit",
+                "pt": "global",
+                "to": "3",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 280,
+        "y": 120,
+        "wires": [
+            [
+                "d0425b2404ba6c0e",
+                "a02bb548f10305e5"
+            ]
+        ]
+    },
+    {
+        "id": "a02bb548f10305e5",
+        "type": "debug",
+        "z": "fe39c139f5d28cd6",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "80ad15e99453b15b",
+        "type": "inject",
+        "z": "fe39c139f5d28cd6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 120,
+        "wires": [
+            [
+                "cf84c2ec1f4ec5e8"
+            ]
+        ]
+    },
+    {
+        "id": "5da75b42017022ae",
+        "type": "comment",
+        "z": "fe39c139f5d28cd6",
+        "g": "93ea0c758c0cf52c",
+        "name": "Vérification d'inscription",
+        "info": "",
+        "x": 600,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "4706a33612527cde",
+        "type": "comment",
+        "z": "fe39c139f5d28cd6",
+        "g": "93ea0c758c0cf52c",
+        "name": "Inscription",
+        "info": "",
+        "x": 560,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "2982dff7a43e525e",
+        "type": "ui_button",
+        "z": "fe39c139f5d28cd6",
+        "g": "a4fa65b16823e850",
+        "name": "Go Back",
+        "group": "7a40382c808ff9a3",
+        "order": 1,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-angle-left",
+        "payload": "{\"group\":{\"show\":\"Inscription_inscrit?\",\"hide\":\"Inscription_form-verif\"}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 100,
+        "y": 940,
+        "wires": [
+            [
+                "db55ee3cee297b29"
+            ]
+        ]
+    },
+    {
+        "id": "db55ee3cee297b29",
+        "type": "ui_ui_control",
+        "z": "fe39c139f5d28cd6",
+        "g": "a4fa65b16823e850",
+        "name": "Go back from verif",
+        "events": "all",
+        "x": 270,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4d036e234e264172",
+        "type": "ui_text",
+        "z": "fe39c139f5d28cd6",
+        "g": "a4fa65b16823e850",
+        "group": "7a40382c808ff9a3",
+        "order": 2,
+        "width": 11,
+        "height": 1,
+        "name": "",
+        "label": "Vérification",
+        "format": "",
+        "layout": "row-center",
+        "className": "",
+        "x": 110,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "534fe6fb717f2307",
+        "type": "subflow:1834c4feb31e866d",
+        "z": "fe39c139f5d28cd6",
+        "g": "a4fa65b16823e850",
+        "name": "",
+        "x": 310,
+        "y": 860,
+        "wires": [
+            [
+                "10e1e0e2fad95f3e",
+                "7d726fca4ff36dd4"
+            ]
+        ]
+    },
+    {
+        "id": "10e1e0e2fad95f3e",
+        "type": "debug",
+        "z": "fe39c139f5d28cd6",
+        "g": "a4fa65b16823e850",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "2c92a8c0b1bd3379",
+        "type": "ui_button",
+        "z": "fe39c139f5d28cd6",
+        "d": true,
+        "g": "a4fa65b16823e850",
+        "name": "",
+        "group": "7a40382c808ff9a3",
+        "order": 8,
+        "width": 11,
+        "height": 1,
+        "passthru": false,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"nom\":\"Lei\",\"prenom\":\"Elise\",\"email\":\"elise.lei@hotmail.fr\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 90,
+        "y": 980,
+        "wires": [
+            [
+                "534fe6fb717f2307"
+            ]
+        ]
+    },
+    {
+        "id": "a349017057c82a99",
+        "type": "ui_button",
+        "z": "fe39c139f5d28cd6",
+        "g": "1faf41ee1428034d",
+        "name": "Go Back",
+        "group": "e947c1aeadb9821c",
+        "order": 4,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "fa-angle-left",
+        "payload": "{\"group\":{\"show\":\"Inscription_inscrit?\",\"hide\":\"Inscription_form-inscription\"}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 100,
+        "y": 1320,
+        "wires": [
+            [
+                "ca901e2e31322e26"
+            ]
+        ]
+    },
+    {
+        "id": "ca901e2e31322e26",
+        "type": "ui_ui_control",
+        "z": "fe39c139f5d28cd6",
+        "g": "1faf41ee1428034d",
+        "name": "Go back from inscription",
+        "events": "all",
+        "x": 290,
+        "y": 1320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "96d2e06b3866d817",
+        "type": "function",
+        "z": "fe39c139f5d28cd6",
+        "g": "1faf41ee1428034d",
+        "name": "Formatage",
+        "func": "const d = new Date();\nconst strDate = `${d.getFullYear()}` + (d.getMonth()+1).toString().padStart(2,'0') + (d.getDate()).toString().padStart(2,'0') + (d.getHours()).toString().padStart(2,'0') + (d.getMinutes()).toString().padStart(2,'0');\nconst entries = [msg.payload.plein, msg.payload.reduit, msg.payload.gratuit];\nconst prices = [global.get(\"tPlein\"), global.get(\"tReduit\"), 0];\nlet final = [];\nlet temp;\n\ndelete msg.payload.plein;\ndelete msg.payload.reduit;\ndelete msg.payload.gratuit;\n\nmsg.payload.Nom = msg.payload.Nom.toUpperCase();\nmsg.payload.Prenom = msg.payload.Prenom.toUpperCase();\nmsg.payload.Email = msg.payload.Email.toLowerCase();\nmsg.payload.tarif = 99;\nmsg.payload.date = `${d.getFullYear()}-${(d.getMonth()+1).toString().padStart(2,'0')}-${d.getDate().toString().padStart(2,'0')}`;\nmsg.payload.creneau = \"\";\nmsg.payload.present = \"OUI\";\nmsg.payload.pass = \"OUI\";\nmsg.payload.arrivee = `${d.getFullYear()}/${d.getMonth()+1}/${d.getDate()} ${d.getHours()}:${d.getMinutes()}`;\n\ntemp = Object.values(msg.payload);\ntemp.unshift(\"\");\n\nfor (let e=0; e<3; e++) {\n    temp[5] = prices[e];\n    for (let i=0; i<entries[e]; i++) {\n        temp[0] = strDate + global.get(\"counter\").toString().padStart(4,'0');\n        global.set(\"counter\", global.get(\"counter\")+1);\n        final.push([...temp]);\n    }\n}\n\nmsg.payload = final;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 1280,
+        "wires": [
+            [
+                "84829145e457c8bb",
+                "37e8cfa4ff31828c",
+                "76b49ba883345927",
+                "b86a125d2b31aae9"
+            ]
+        ]
+    },
+    {
+        "id": "3c0f9abc4b14a601",
+        "type": "comment",
+        "z": "fe39c139f5d28cd6",
+        "g": "1faf41ee1428034d",
+        "name": "Pass sanitaire vrai par défaut pour l'instant",
+        "info": "",
+        "x": 620,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "84829145e457c8bb",
+        "type": "debug",
+        "z": "fe39c139f5d28cd6",
+        "g": "1faf41ee1428034d",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "c6c84e9e146db040",
+        "type": "debug",
+        "z": "fe39c139f5d28cd6",
+        "g": "1faf41ee1428034d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1270,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "37e8cfa4ff31828c",
+        "type": "change",
+        "z": "fe39c139f5d28cd6",
+        "g": "1faf41ee1428034d",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "_datasheet",
+                "pt": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 870,
+        "y": 1280,
+        "wires": [
+            [
+                "f38ea71470c13f4c"
+            ]
+        ]
+    },
+    {
+        "id": "d8b8bf0974da5037",
+        "type": "comment",
+        "z": "fe39c139f5d28cd6",
+        "name": "Accueil",
+        "info": "",
+        "x": 90,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "a7fe5877398b748b",
+        "type": "ui_text",
+        "z": "fe39c139f5d28cd6",
+        "group": "b64f8a172d84f3cb",
+        "order": 2,
+        "width": 13,
+        "height": 1,
+        "name": "Bienvenue",
+        "label": "",
+        "format": "Bienvenue au Musée de Minéralogie des Mines de Paris !",
+        "layout": "row-center",
+        "className": ".masonry-container",
+        "x": 110,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "da6c520f2dcd99e1",
+        "type": "ui_button",
+        "z": "fe39c139f5d28cd6",
+        "name": "",
+        "group": "b64f8a172d84f3cb",
+        "order": 5,
+        "width": 7,
+        "height": 1,
+        "passthru": false,
+        "label": "Commencer",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"group\":{\"show\":\"Inscription_inscrit?\",\"hide\":\"Inscription_accueil\"}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 220,
+        "wires": [
+            [
+                "74b0de69ab7d3eb0"
+            ]
+        ]
+    },
+    {
+        "id": "74b0de69ab7d3eb0",
+        "type": "ui_ui_control",
+        "z": "fe39c139f5d28cd6",
+        "name": "Go to 1st question",
+        "events": "all",
+        "x": 290,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2816202a0319c376",
+        "type": "ui_template",
+        "z": "fe39c139f5d28cd6",
+        "group": "",
+        "name": "Stylesheet",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    md-toolbar {\n        background-color: #020202 !important;\n    }\n    \n    #Tab_Inscription {\n        height: 100%;\n        /*padding: 100px;*/\n        background-image: url(https://images4.alphacoders.com/632/632974.jpg);\n    }\n    \n    ui-card-panel {\n        background-color: #ffffff10 !important;\n        backdrop-filter: blur(8px) !important;\n        -webkit-backdrop-filter: blur(8px) !important;\n        /* From https://css.glass */\n        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);\n        height: 75%;\n        width: 50%;\n        position: relative;\n        padding: 30px;\n    }\n    \n    .nr-dashboard-cardpanel {\n        margin: auto;\n        position: absolute;\n        top: 50%;\n        -ms-transform: translateY(-50%);\n        transform: translateY(-50%);\n        width: 80%;\n    }\n    \n    .nr-dashboard-text {\n        background: none;\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 390,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "76b49ba883345927",
+        "type": "change",
+        "z": "fe39c139f5d28cd6",
+        "g": "1faf41ee1428034d",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "_todaysheet",
+                "pt": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 870,
+        "y": 1320,
+        "wires": [
+            [
+                "c7dcb97dc7eb4419"
+            ]
+        ]
+    },
+    {
+        "id": "31836958e92b4f93",
+        "type": "comment",
+        "z": "fe39c139f5d28cd6",
+        "g": "a4fa65b16823e850",
+        "name": "form-verif",
+        "info": "",
+        "x": 100,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "08e030d059af9b65",
+        "type": "comment",
+        "z": "fe39c139f5d28cd6",
+        "g": "1faf41ee1428034d",
+        "name": "form-inscription",
+        "info": "",
+        "x": 120,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "b86a125d2b31aae9",
+        "type": "change",
+        "z": "fe39c139f5d28cd6",
+        "g": "1faf41ee1428034d",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":\"Inscription_valide\",\"hide\":\"Inscription_form-inscription\"}}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "branch",
+                "pt": "flow",
+                "to": "inscrip",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 840,
+        "y": 1380,
+        "wires": [
+            [
+                "f75b2082e453878b"
+            ]
+        ]
+    },
+    {
+        "id": "f75b2082e453878b",
+        "type": "ui_ui_control",
+        "z": "fe39c139f5d28cd6",
+        "g": "1faf41ee1428034d",
+        "name": "Valid from inscription",
+        "events": "all",
+        "x": 1040,
+        "y": 1380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2ba1d8d2e7d6efa6",
+        "type": "comment",
+        "z": "fe39c139f5d28cd6",
+        "name": "validé",
+        "info": "",
+        "x": 2030,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "86be4f8fb8861706",
+        "type": "ui_text",
+        "z": "fe39c139f5d28cd6",
+        "group": "295810ea5ac2b9a1",
+        "order": 2,
+        "width": 13,
+        "height": 1,
+        "name": "End message",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 2600,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "d1dd21da8536ea37",
+        "type": "switch",
+        "z": "fe39c139f5d28cd6",
+        "name": "",
+        "property": "branch",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "inscrip",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "verif",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 2170,
+        "y": 1320,
+        "wires": [
+            [
+                "00781c9f11950176"
+            ],
+            [
+                "8b658f9de8dab4f1"
+            ]
+        ]
+    },
+    {
+        "id": "00781c9f11950176",
+        "type": "change",
+        "z": "fe39c139f5d28cd6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Félicatation ! Votre inscription a bien été prise en compte. Veuillez sonner à la porte. Un membre du personnel viendra vous ouvrir. Merci !",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2360,
+        "y": 1260,
+        "wires": [
+            [
+                "86be4f8fb8861706",
+                "2b028ac085a8f1e5"
+            ]
+        ]
+    },
+    {
+        "id": "8b658f9de8dab4f1",
+        "type": "change",
+        "z": "fe39c139f5d28cd6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Bienvenu.e.s au Musée ! Veuillez sonner à la porte et patienter svp. Merci !",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2360,
+        "y": 1380,
+        "wires": [
+            [
+                "86be4f8fb8861706",
+                "2b028ac085a8f1e5"
+            ]
+        ]
+    },
+    {
+        "id": "2e94b30c614adf4b",
+        "type": "ui_text",
+        "z": "fe39c139f5d28cd6",
+        "group": "c5df3fe2a397e369",
+        "order": 2,
+        "width": 13,
+        "height": 1,
+        "name": "",
+        "label": "",
+        "format": "Une erreur s'est produite... Réessayez en répondant que vous n'êtes pas déjà inscrit svp. En cas d'erreur persistante, sonnez, un membre du personnel vous ouvrira.",
+        "layout": "row-center",
+        "className": "",
+        "x": 130,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "2b028ac085a8f1e5",
+        "type": "debug",
+        "z": "fe39c139f5d28cd6",
+        "name": "valide appears",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2600,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "360a4756998b313a",
+        "type": "delay",
+        "z": "fe39c139f5d28cd6",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2160,
+        "y": 1440,
+        "wires": [
+            [
+                "ec2266144aa6fb44"
+            ]
+        ]
+    },
+    {
+        "id": "ec2266144aa6fb44",
+        "type": "change",
+        "z": "fe39c139f5d28cd6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":\"Inscription_accueil\",\"hide\":\"Inscription_valide\"}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2320,
+        "y": 1440,
+        "wires": [
+            [
+                "327d4d54662355c3"
+            ]
+        ]
+    },
+    {
+        "id": "72a11f78fd69f684",
+        "type": "comment",
+        "z": "fe39c139f5d28cd6",
+        "name": "Error",
+        "info": "",
+        "x": 130,
+        "y": 1620,
+        "wires": []
+    },
+    {
+        "id": "327d4d54662355c3",
+        "type": "ui_ui_control",
+        "z": "fe39c139f5d28cd6",
+        "name": "Go to home from valide",
+        "events": "all",
+        "x": 2570,
+        "y": 1440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0e8651a4d6134ff3",
+        "type": "complete",
+        "z": "fe39c139f5d28cd6",
+        "name": "",
+        "scope": [
+            "b86a125d2b31aae9",
+            "fa8653b9fa202f5e"
+        ],
+        "uncaught": false,
+        "x": 2010,
+        "y": 1320,
+        "wires": [
+            [
+                "d1dd21da8536ea37"
+            ]
+        ]
+    },
+    {
+        "id": "937beb853ef44085",
+        "type": "complete",
+        "z": "fe39c139f5d28cd6",
+        "name": "",
+        "scope": [
+            "2b028ac085a8f1e5"
+        ],
+        "uncaught": false,
+        "x": 2010,
+        "y": 1440,
+        "wires": [
+            [
+                "360a4756998b313a"
+            ]
+        ]
+    },
+    {
+        "id": "2bc4bdcae5e460a2",
+        "type": "function",
+        "z": "fe39c139f5d28cd6",
+        "g": "1faf41ee1428034d",
+        "name": "",
+        "func": "let sum = msg.payload.plein + msg.payload.reduit + msg.payload.gratuit;\n\nif (sum<=0) {\n    return [null, msg]; //error !\n} else {\n    return [msg, null];\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 1280,
+        "wires": [
+            [
+                "96d2e06b3866d817"
+            ],
+            [
+                "e4c438fe5ab2bb81"
+            ]
+        ]
+    },
+    {
+        "id": "e4c438fe5ab2bb81",
+        "type": "change",
+        "z": "fe39c139f5d28cd6",
+        "g": "1faf41ee1428034d",
+        "name": "Nbr de personnes inscrites invalide",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Inscrivez au moins une personne, même si c'est gratuit.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 1460,
+        "wires": [
+            [
+                "1844668dcb2e0ea8"
+            ]
+        ]
+    },
+    {
+        "id": "1844668dcb2e0ea8",
+        "type": "ui_text",
+        "z": "fe39c139f5d28cd6",
+        "g": "1faf41ee1428034d",
+        "group": "e947c1aeadb9821c",
+        "order": 2,
+        "width": 9,
+        "height": 1,
+        "name": "Msg d'erreur pour user",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 520,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "7d726fca4ff36dd4",
+        "type": "switch",
+        "z": "fe39c139f5d28cd6",
+        "g": "a4fa65b16823e850",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "GOTIT",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "error",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 530,
+        "y": 860,
+        "wires": [
+            [
+                "9763008b5d7d1d62",
+                "889692fea2141ddc"
+            ],
+            [
+                "794628c792b06f20"
+            ]
+        ]
+    },
+    {
+        "id": "3278c76a2cceca16",
+        "type": "ui_list",
+        "z": "fe39c139f5d28cd6",
+        "group": "3f900da39bb60c9a",
+        "name": "",
+        "order": 5,
+        "width": 13,
+        "height": 5,
+        "lineType": "three",
+        "actionType": "switch",
+        "allowHTML": false,
+        "outputs": 1,
+        "topic": "add",
+        "x": 1430,
+        "y": 820,
+        "wires": [
+            [
+                "944d8dec4666cc85",
+                "ab38bfc4b3a17d9f"
+            ]
+        ]
+    },
+    {
+        "id": "794628c792b06f20",
+        "type": "change",
+        "z": "fe39c139f5d28cd6",
+        "g": "a4fa65b16823e850",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":\"Inscription_error\",\"hide\":\"Inscription_form-verif\"}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 980,
+        "wires": [
+            [
+                "9cb6e08f507ac8d7"
+            ]
+        ]
+    },
+    {
+        "id": "9cb6e08f507ac8d7",
+        "type": "ui_ui_control",
+        "z": "fe39c139f5d28cd6",
+        "g": "a4fa65b16823e850",
+        "name": "Error from form-verif",
+        "events": "all",
+        "x": 740,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "889692fea2141ddc",
+        "type": "function",
+        "z": "fe39c139f5d28cd6",
+        "name": "",
+        "func": "let li = [];\n\nfor (const person of msg.people) {\n    li.push({\n        \"title\": `${person[1]} ${person[2]}`,\n        \"description\": `${person[5]}€ | ${person[6]}, ${person[7]}`\n    });\n    person.push(`${person[1]} ${person[2]}`);\n}\n\nmsg.payload = li;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1080,
+        "y": 820,
+        "wires": [
+            [
+                "fc7e97b92fd99e4f",
+                "e2f09651b2018349"
+            ]
+        ]
+    },
+    {
+        "id": "944d8dec4666cc85",
+        "type": "debug",
+        "z": "fe39c139f5d28cd6",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1530,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "9763008b5d7d1d62",
+        "type": "change",
+        "z": "fe39c139f5d28cd6",
+        "g": "a4fa65b16823e850",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":\"Inscription_form-verif2\",\"hide\":\"Inscription_form-verif\"}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 940,
+        "wires": [
+            [
+                "60d21870b99587fe"
+            ]
+        ]
+    },
+    {
+        "id": "60d21870b99587fe",
+        "type": "ui_ui_control",
+        "z": "fe39c139f5d28cd6",
+        "g": "a4fa65b16823e850",
+        "name": "form-verif to form-verif2",
+        "events": "all",
+        "x": 750,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "501703b87958ca85",
+        "type": "ui_button",
+        "z": "fe39c139f5d28cd6",
+        "name": "",
+        "group": "c5df3fe2a397e369",
+        "order": 5,
+        "width": 13,
+        "height": 1,
+        "passthru": true,
+        "label": "Retour à l'accueil",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"group\":{\"show\":\"Inscription_accueil\",\"hide\":\"Inscription_error\"}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 500,
+        "y": 1700,
+        "wires": [
+            [
+                "43a719363fecf711"
+            ]
+        ]
+    },
+    {
+        "id": "730c2ef798799760",
+        "type": "comment",
+        "z": "fe39c139f5d28cd6",
+        "name": "form-verif2",
+        "info": "",
+        "x": 1120,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "79f0c053f65f8708",
+        "type": "ui_text",
+        "z": "fe39c139f5d28cd6",
+        "group": "3f900da39bb60c9a",
+        "order": 2,
+        "width": 13,
+        "height": 1,
+        "name": "",
+        "label": "Sélectionnez la/les personne(s) présente(s)",
+        "format": "",
+        "layout": "row-center",
+        "className": "",
+        "x": 1370,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "93a18eae71ce160d",
+        "type": "ui_button",
+        "z": "fe39c139f5d28cd6",
+        "name": "",
+        "group": "3f900da39bb60c9a",
+        "order": 16,
+        "width": 13,
+        "height": 1,
+        "passthru": false,
+        "label": "Valider",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "go",
+        "topicType": "str",
+        "x": 1070,
+        "y": 920,
+        "wires": [
+            [
+                "ab38bfc4b3a17d9f"
+            ]
+        ]
+    },
+    {
+        "id": "43a719363fecf711",
+        "type": "ui_ui_control",
+        "z": "fe39c139f5d28cd6",
+        "name": "",
+        "events": "all",
+        "x": 670,
+        "y": 1700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "003238eaa1d0e0f5",
+        "type": "complete",
+        "z": "fe39c139f5d28cd6",
+        "name": "",
+        "scope": [
+            "794628c792b06f20"
+        ],
+        "uncaught": false,
+        "x": 120,
+        "y": 1700,
+        "wires": [
+            [
+                "6af96dd5d9da4b7d"
+            ]
+        ]
+    },
+    {
+        "id": "6af96dd5d9da4b7d",
+        "type": "delay",
+        "z": "fe39c139f5d28cd6",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 310,
+        "y": 1700,
+        "wires": [
+            [
+                "501703b87958ca85"
+            ]
+        ]
+    },
+    {
+        "id": "ab38bfc4b3a17d9f",
+        "type": "function",
+        "z": "fe39c139f5d28cd6",
+        "name": "Récup",
+        "func": "context.data = context.data || [];\n\nif (msg.topic == \"add\") {\n    if (msg.payload.isChecked) {\n        context.data.push(msg.payload);\n    }\n} else if (msg.topic == \"go\") {\n    msg.payload = context.data;\n    msg.topic = \"\";\n    context.data = null;\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1210,
+        "y": 920,
+        "wires": [
+            [
+                "a5b96a621198ea45",
+                "9867c616bf332b34"
+            ]
+        ]
+    },
+    {
+        "id": "fc7e97b92fd99e4f",
+        "type": "change",
+        "z": "fe39c139f5d28cd6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "verif-people",
+                "pt": "flow",
+                "to": "people",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "verif-indPeople",
+                "pt": "flow",
+                "to": "indPeople",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1260,
+        "y": 820,
+        "wires": [
+            [
+                "3278c76a2cceca16"
+            ]
+        ]
+    },
+    {
+        "id": "a5b96a621198ea45",
+        "type": "debug",
+        "z": "fe39c139f5d28cd6",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1370,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "9867c616bf332b34",
+        "type": "function",
+        "z": "fe39c139f5d28cd6",
+        "name": "Pour Data",
+        "func": "const people = flow.get(\"verif-people\");\nconst indPeople = flow.get(\"verif-indPeople\");\nlet indList = [];\nlet selectedID = [];\nlet ind;\n\nfunction test(elem) {\n    return (elem[8] === this.title && elem[5]==this.description.slice(0,1));\n}\n\nfor (const obj of msg.payload) {\n    ind = people.findIndex(test, obj);\n    selectedID.push(people[ind][0]);\n    people[ind][8] = \"\";\n    indList.push(indPeople[ind]);\n}\n\nconst d = new Date();\n\nfor (const i of indList) {\n    msg.cells = `Feuille1!I${i+1}:K${i+1}`;\n    msg.payload = [\"OUI\", \"OUI\", `${d.getFullYear()}/${d.getMonth()+1}/${d.getDate()} ${d.getHours()}:${d.getMinutes()}`];\n    node.send([msg, null]);\n}\n\nmsg.select = selectedID;\nreturn [null, msg];",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1380,
+        "y": 920,
+        "wires": [
+            [
+                "463cead7d715371c",
+                "0b02915aebc7be81"
+            ],
+            [
+                "ef70cd75ffdd91e0"
+            ]
+        ]
+    },
+    {
+        "id": "e2f09651b2018349",
+        "type": "debug",
+        "z": "fe39c139f5d28cd6",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "people",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1250,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "9e4343f95a5372e9",
+        "type": "GSheet",
+        "z": "fe39c139f5d28cd6",
+        "creds": "6c7199f554b64b5d",
+        "method": "update",
+        "action": "",
+        "sheet": " ${DATA}",
+        "cells": "",
+        "flatten": false,
+        "name": "",
+        "x": 1850,
+        "y": 920,
+        "wires": [
+            [
+                "eca98b39d238c81c",
+                "fa8653b9fa202f5e"
+            ]
+        ]
+    },
+    {
+        "id": "eca98b39d238c81c",
+        "type": "debug",
+        "z": "fe39c139f5d28cd6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2090,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "463cead7d715371c",
+        "type": "debug",
+        "z": "fe39c139f5d28cd6",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1590,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "9cfe0930dc8b1216",
+        "type": "comment",
+        "z": "fe39c139f5d28cd6",
+        "name": "Pass noté vrai par défaut",
+        "info": "",
+        "x": 1370,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "0b02915aebc7be81",
+        "type": "change",
+        "z": "fe39c139f5d28cd6",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "_datasheet",
+                "pt": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1630,
+        "y": 920,
+        "wires": [
+            [
+                "9e4343f95a5372e9"
+            ]
+        ]
+    },
+    {
+        "id": "fa8653b9fa202f5e",
+        "type": "change",
+        "z": "fe39c139f5d28cd6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":\"Inscription_valide\",\"hide\":\"Inscription_form-verif2\"}}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "branch",
+                "pt": "flow",
+                "to": "verif",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2080,
+        "y": 920,
+        "wires": [
+            [
+                "a59e24af67bb28be"
+            ]
+        ]
+    },
+    {
+        "id": "a59e24af67bb28be",
+        "type": "ui_ui_control",
+        "z": "fe39c139f5d28cd6",
+        "name": "",
+        "events": "all",
+        "x": 2260,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a76beeded350cbcb",
+        "type": "change",
+        "z": "fe39c139f5d28cd6",
+        "g": "a4fa65b16823e850",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":\"Inscription_form-verif\"}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 1040,
+        "wires": [
+            [
+                "69e1c3f58533ed8c"
+            ]
+        ]
+    },
+    {
+        "id": "69e1c3f58533ed8c",
+        "type": "ui_ui_control",
+        "z": "fe39c139f5d28cd6",
+        "g": "a4fa65b16823e850",
+        "name": "",
+        "events": "all",
+        "x": 480,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f38ea71470c13f4c",
+        "type": "GSheet",
+        "z": "fe39c139f5d28cd6",
+        "g": "1faf41ee1428034d",
+        "creds": "6c7199f554b64b5d",
+        "method": "append",
+        "action": "",
+        "sheet": "${DATA}",
+        "cells": "Feuille1",
+        "flatten": false,
+        "name": "",
+        "x": 1090,
+        "y": 1280,
+        "wires": [
+            [
+                "c6c84e9e146db040"
+            ]
+        ]
+    },
+    {
+        "id": "c7dcb97dc7eb4419",
+        "type": "GSheet",
+        "z": "fe39c139f5d28cd6",
+        "g": "1faf41ee1428034d",
+        "creds": "6c7199f554b64b5d",
+        "method": "append",
+        "action": "",
+        "sheet": "${TODAY}",
+        "cells": "Feuille1",
+        "flatten": false,
+        "name": "",
+        "x": 1090,
+        "y": 1320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e5961a767a38a94a",
+        "type": "function",
+        "z": "fe39c139f5d28cd6",
+        "name": "Pour Today",
+        "func": "const today = global.get(\"_todaysheet\");\nconst IDs = [...msg.select];\nconst d = new Date();\nlet i;\n\nfor (const id of IDs) {\n    i = today.findIndex((elem) => elem[0]===id);\n    msg.cells = `Feuille1!I${i+1}:K${i+1}`;\n    msg.payload = [\"OUI\", \"OUI\", `${d.getFullYear()}/${d.getMonth()+1}/${d.getDate()} ${d.getHours()}:${d.getMinutes()}`];\n    node.send(msg);\n}\n\nnode.done();",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1890,
+        "y": 1000,
+        "wires": [
+            [
+                "80e6e09bacf14d6b",
+                "2eca3de7b6f21273"
+            ]
+        ]
+    },
+    {
+        "id": "ef70cd75ffdd91e0",
+        "type": "switch",
+        "z": "fe39c139f5d28cd6",
+        "name": "",
+        "property": "_todaysheet",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "array",
+                "vt": "array"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1570,
+        "y": 1000,
+        "wires": [
+            [
+                "e5961a767a38a94a"
+            ],
+            [
+                "a561d27c81d12228"
+            ]
+        ]
+    },
+    {
+        "id": "a561d27c81d12228",
+        "type": "GSheet",
+        "z": "fe39c139f5d28cd6",
+        "creds": "6c7199f554b64b5d",
+        "method": "get",
+        "action": "",
+        "sheet": "${TODAY}",
+        "cells": "Feuille1",
+        "flatten": false,
+        "name": "",
+        "x": 1650,
+        "y": 1060,
+        "wires": [
+            [
+                "ea5cc405cf6384da"
+            ]
+        ]
+    },
+    {
+        "id": "ea5cc405cf6384da",
+        "type": "change",
+        "z": "fe39c139f5d28cd6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "_todaysheet",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1720,
+        "y": 1100,
+        "wires": [
+            [
+                "e5961a767a38a94a"
+            ]
+        ]
+    },
+    {
+        "id": "80e6e09bacf14d6b",
+        "type": "debug",
+        "z": "fe39c139f5d28cd6",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2070,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "2eca3de7b6f21273",
+        "type": "change",
+        "z": "fe39c139f5d28cd6",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "_todaysheet",
+                "pt": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2110,
+        "y": 1000,
+        "wires": [
+            [
+                "02fe2972722bd616"
+            ]
+        ]
+    },
+    {
+        "id": "02fe2972722bd616",
+        "type": "GSheet",
+        "z": "fe39c139f5d28cd6",
+        "creds": "6c7199f554b64b5d",
+        "method": "update",
+        "action": "",
+        "sheet": "${TODAY}",
+        "cells": "",
+        "flatten": false,
+        "name": "",
+        "x": 2330,
+        "y": 1000,
+        "wires": [
+            [
+                "baeca82f9f0fc798"
+            ]
+        ]
+    },
+    {
+        "id": "baeca82f9f0fc798",
+        "type": "debug",
+        "z": "fe39c139f5d28cd6",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2510,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "506ef121c91de449",
+        "type": "inject",
+        "z": "6e6d089bd573eff6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 300,
+        "wires": [
+            [
+                "fcabf3db4bfedf1f",
+                "7e592080aef55f38"
+            ]
+        ]
+    },
+    {
+        "id": "0bd274977179e83d",
+        "type": "subflow:d0d1aaae96b75771",
+        "z": "6e6d089bd573eff6",
+        "name": "",
+        "x": 510,
+        "y": 180,
+        "wires": [
+            [
+                "9929f293a763f525",
+                "ad489d9bfd02a434"
+            ]
+        ]
+    },
+    {
+        "id": "fcabf3db4bfedf1f",
+        "type": "function",
+        "z": "6e6d089bd573eff6",
+        "name": "Initialisation",
+        "func": "if (global.get(\"coounter\") == undefined) {\n    global.set(\"counter\", 0);\n}\n\nlet n = node.outputCount;\nlet day = 24*60*60*1000;\n//msg.payload -= 1*day;\nlet msgs = [{payload: msg.payload, date: 0}];\n\n//Send timestamp for each day (1 output = 1 day)\nfor (let i=1; i<n; i++) {\n    msgs.push({payload: msg.payload + i*day, date: i});\n}\n\nreturn msgs;",
+        "outputs": 3,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 300,
+        "wires": [
+            [
+                "0bd274977179e83d"
+            ],
+            [
+                "740af694fce813be"
+            ],
+            [
+                "24a9bbb2eaf938f7"
+            ]
+        ]
+    },
+    {
+        "id": "e967e3ba682fd2e7",
+        "type": "debug",
+        "z": "6e6d089bd573eff6",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1910,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "55ce04d75d78111b",
+        "type": "switch",
+        "z": "6e6d089bd573eff6",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nempty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1310,
+        "y": 300,
+        "wires": [
+            [
+                "7dae6972c3e65bc7"
+            ]
+        ]
+    },
+    {
+        "id": "740af694fce813be",
+        "type": "subflow:d0d1aaae96b75771",
+        "z": "6e6d089bd573eff6",
+        "name": "",
+        "x": 510,
+        "y": 300,
+        "wires": [
+            [
+                "125da5d3cd5f9d4b",
+                "ad489d9bfd02a434"
+            ]
+        ]
+    },
+    {
+        "id": "24a9bbb2eaf938f7",
+        "type": "subflow:d0d1aaae96b75771",
+        "z": "6e6d089bd573eff6",
+        "name": "",
+        "x": 510,
+        "y": 420,
+        "wires": [
+            [
+                "5f2370e6d5732f21",
+                "ad489d9bfd02a434"
+            ]
+        ]
+    },
+    {
+        "id": "4aad533d60907a9f",
+        "type": "comment",
+        "z": "6e6d089bd573eff6",
+        "name": "Today",
+        "info": "",
+        "x": 470,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "247c1a15505b3533",
+        "type": "comment",
+        "z": "6e6d089bd573eff6",
+        "name": "Tomorrow",
+        "info": "",
+        "x": 480,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "b4d8bf90f65df27b",
+        "type": "comment",
+        "z": "6e6d089bd573eff6",
+        "name": "The day after",
+        "info": "",
+        "x": 490,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "9929f293a763f525",
+        "type": "debug",
+        "z": "6e6d089bd573eff6",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "125da5d3cd5f9d4b",
+        "type": "debug",
+        "z": "6e6d089bd573eff6",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "5f2370e6d5732f21",
+        "type": "debug",
+        "z": "6e6d089bd573eff6",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "327689fab149544e",
+        "type": "debug",
+        "z": "6e6d089bd573eff6",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1130,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "7dae6972c3e65bc7",
+        "type": "change",
+        "z": "6e6d089bd573eff6",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "_datasheet",
+                "pt": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1490,
+        "y": 300,
+        "wires": [
+            [
+                "73a764e4ab6a30aa"
+            ]
+        ]
+    },
+    {
+        "id": "ad489d9bfd02a434",
+        "type": "function",
+        "z": "6e6d089bd573eff6",
+        "name": "",
+        "func": "const nbInputs = 3;\n\ncontext.handled = context.handled || Array(nbInputs).fill(false);\ncontext.people = context.people || [];\n\nif (msg.payload2 != undefined) {\n    delete msg.payload2;\n}\n\nif (!context.handled[msg.date]) {\n    context.handled[msg.date] = true;\n    context.people = context.people.concat(msg.payload);\n}\nmsg = null;\n\nif (context.handled.every((elem) => elem)) {\n    let result = context.people;\n    context.handled = null;\n    context.people = null;\n    return {payload: result};\n} else return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 300,
+        "wires": [
+            [
+                "327689fab149544e",
+                "0d85329febab882c"
+            ]
+        ]
+    },
+    {
+        "id": "0d85329febab882c",
+        "type": "subflow:0d7d4b85159076ca",
+        "z": "6e6d089bd573eff6",
+        "name": "",
+        "env": [
+            {
+                "name": "Sheet",
+                "value": "data",
+                "type": "str"
+            }
+        ],
+        "x": 1150,
+        "y": 300,
+        "wires": [
+            [
+                "51180b5e5a1a1c79",
+                "55ce04d75d78111b"
+            ]
+        ]
+    },
+    {
+        "id": "51180b5e5a1a1c79",
+        "type": "debug",
+        "z": "6e6d089bd573eff6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1330,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "73a764e4ab6a30aa",
+        "type": "GSheet",
+        "z": "6e6d089bd573eff6",
+        "creds": "6c7199f554b64b5d",
+        "method": "append",
+        "action": "",
+        "sheet": "${DATA}",
+        "cells": "Feuille1",
+        "flatten": false,
+        "name": "",
+        "x": 1730,
+        "y": 300,
+        "wires": [
+            [
+                "e967e3ba682fd2e7"
+            ]
+        ]
+    },
+    {
+        "id": "7e592080aef55f38",
+        "type": "function",
+        "z": "6e6d089bd573eff6",
+        "name": "",
+        "func": "const d = new Date(msg.payload);\nmsg.payload = d.getDate();\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 520,
+        "wires": [
+            [
+                "0975ef4015b5d3cb"
+            ]
+        ]
+    },
+    {
+        "id": "0975ef4015b5d3cb",
+        "type": "rbe",
+        "z": "6e6d089bd573eff6",
+        "name": "",
+        "func": "rbei",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 470,
+        "y": 520,
+        "wires": [
+            [
+                "27a728a4adf617d6"
+            ]
+        ]
+    },
+    {
+        "id": "27a728a4adf617d6",
+        "type": "change",
+        "z": "6e6d089bd573eff6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "counter",
+                "pt": "global",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0f16324bfaaa5ae1",
+        "type": "inject",
+        "z": "2bedca4f534fe738",
+        "name": "",
+        "props": [
+            {
+                "p": "tmstp",
+                "v": "",
+                "vt": "date"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.2",
+        "topic": "",
+        "x": 90,
+        "y": 240,
+        "wires": [
+            [
+                "97c78a955fddba50"
+            ]
+        ]
+    },
+    {
+        "id": "97c78a955fddba50",
+        "type": "subflow:df14704212ce2732",
+        "z": "2bedca4f534fe738",
+        "name": "",
+        "x": 290,
+        "y": 240,
+        "wires": [
+            [
+                "aa81b612cf2d9ae7",
+                "84380c8ff909d743"
+            ]
+        ]
+    },
+    {
+        "id": "aa81b612cf2d9ae7",
+        "type": "switch",
+        "z": "2bedca4f534fe738",
+        "name": "",
+        "property": "test",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "cleared",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "unchanged",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 530,
+        "y": 240,
+        "wires": [
+            [
+                "93840a95c47ef474"
+            ],
+            [
+                "7efaece1c8113724"
+            ]
+        ]
+    },
+    {
+        "id": "f77695f66dab9d16",
+        "type": "GSheet",
+        "z": "2bedca4f534fe738",
+        "creds": "6c7199f554b64b5d",
+        "method": "get",
+        "action": "",
+        "sheet": "${DATA}",
+        "cells": "Feuille1",
+        "flatten": false,
+        "name": "",
+        "x": 830,
+        "y": 140,
+        "wires": [
+            [
+                "65737a8241ccb0e5"
+            ]
+        ]
+    },
+    {
+        "id": "79180b3fb22f74ca",
+        "type": "debug",
+        "z": "2bedca4f534fe738",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1970,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "84380c8ff909d743",
+        "type": "debug",
+        "z": "2bedca4f534fe738",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "test",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "e9a1593689ee08b7",
+        "type": "function",
+        "z": "2bedca4f534fe738",
+        "name": "",
+        "func": "const d = new Date(msg.tmstp);\nconst strDate = `${d.getFullYear()}-${(d.getMonth()+1).toString().padStart(2,'0')}-${d.getDate().toString().padStart(2,'0')}`;\nconst data = global.get(\"_datasheet\");\nlet l;\n\nl = data.filter((elem) => elem[6]==strDate);\nmsg.payload = l;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 120,
+        "wires": [
+            [
+                "6026798e3080e93c",
+                "3fc8634894513670"
+            ]
+        ]
+    },
+    {
+        "id": "6026798e3080e93c",
+        "type": "debug",
+        "z": "2bedca4f534fe738",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1510,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "fbb37febdec3558a",
+        "type": "GSheet",
+        "z": "2bedca4f534fe738",
+        "creds": "6c7199f554b64b5d",
+        "method": "append",
+        "action": "",
+        "sheet": "${TODAY}",
+        "cells": "Feuille1",
+        "flatten": false,
+        "name": "",
+        "x": 1770,
+        "y": 220,
+        "wires": [
+            [
+                "79180b3fb22f74ca"
+            ]
+        ]
+    },
+    {
+        "id": "93840a95c47ef474",
+        "type": "switch",
+        "z": "2bedca4f534fe738",
+        "name": "",
+        "property": "_datasheet",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "array",
+                "vt": "array"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 670,
+        "y": 120,
+        "wires": [
+            [
+                "e9a1593689ee08b7"
+            ],
+            [
+                "f77695f66dab9d16"
+            ]
+        ]
+    },
+    {
+        "id": "65737a8241ccb0e5",
+        "type": "change",
+        "z": "2bedca4f534fe738",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "_datasheet",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 860,
+        "y": 180,
+        "wires": [
+            [
+                "e9a1593689ee08b7"
+            ]
+        ]
+    },
+    {
+        "id": "7efaece1c8113724",
+        "type": "switch",
+        "z": "2bedca4f534fe738",
+        "name": "",
+        "property": "_todaysheet",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "array",
+                "vt": "array"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 670,
+        "y": 360,
+        "wires": [
+            [
+                "b8119e160c1869fa"
+            ],
+            [
+                "c5c74fd21fcb58e7"
+            ]
+        ]
+    },
+    {
+        "id": "c5c74fd21fcb58e7",
+        "type": "GSheet",
+        "z": "2bedca4f534fe738",
+        "creds": "6c7199f554b64b5d",
+        "method": "get",
+        "action": "",
+        "sheet": "${TODAY}",
+        "cells": "Feuille1",
+        "flatten": false,
+        "name": "",
+        "x": 810,
+        "y": 420,
+        "wires": [
+            [
+                "ba0456f08f87dceb"
+            ]
+        ]
+    },
+    {
+        "id": "ba0456f08f87dceb",
+        "type": "change",
+        "z": "2bedca4f534fe738",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "_todaysheet",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 860,
+        "y": 460,
+        "wires": [
+            [
+                "b8119e160c1869fa"
+            ]
+        ]
+    },
+    {
+        "id": "6f3ecb875cad1911",
+        "type": "GSheet",
+        "z": "2bedca4f534fe738",
+        "creds": "6c7199f554b64b5d",
+        "method": "get",
+        "action": "",
+        "sheet": "${DATA}",
+        "cells": "Feuille1",
+        "flatten": false,
+        "name": "",
+        "x": 1150,
+        "y": 420,
+        "wires": [
+            [
+                "e5d1fc9f48f9814b"
+            ]
+        ]
+    },
+    {
+        "id": "b8119e160c1869fa",
+        "type": "switch",
+        "z": "2bedca4f534fe738",
+        "name": "",
+        "property": "_datasheet",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "array",
+                "vt": "array"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1010,
+        "y": 360,
+        "wires": [
+            [
+                "776b2584f2bf03e7"
+            ],
+            [
+                "6f3ecb875cad1911"
+            ]
+        ]
+    },
+    {
+        "id": "e5d1fc9f48f9814b",
+        "type": "change",
+        "z": "2bedca4f534fe738",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "_datasheet",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1200,
+        "y": 460,
+        "wires": [
+            [
+                "776b2584f2bf03e7"
+            ]
+        ]
+    },
+    {
+        "id": "776b2584f2bf03e7",
+        "type": "function",
+        "z": "2bedca4f534fe738",
+        "name": "",
+        "func": "const data = global.get(\"_datasheet\");\nconst today = global.get(\"_todaysheet\");\nconst d = new Date(msg.tmstp);\nconst strDate = `${d.getFullYear()}-${(d.getMonth()+1).toString().padStart(2,'0')}-${d.getDate().toString().padStart(2,'0')}`;\n\nfunction filtre(elem) {\n    if (elem[6]==strDate) {\n        let i = today.findIndex((obj) => obj[0]===elem[0]);\n        return (i == -1);\n    }\n}\n\nmsg.payload = data.filter(filtre);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1340,
+        "y": 360,
+        "wires": [
+            [
+                "3647ac86ad9123d5",
+                "3fc8634894513670"
+            ]
+        ]
+    },
+    {
+        "id": "3647ac86ad9123d5",
+        "type": "debug",
+        "z": "2bedca4f534fe738",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1530,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "3fc8634894513670",
+        "type": "change",
+        "z": "2bedca4f534fe738",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "_todaysheet",
+                "pt": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1550,
+        "y": 220,
+        "wires": [
+            [
+                "fbb37febdec3558a"
+            ]
+        ]
+    },
+    {
+        "id": "9060dcb5538154eb",
+        "type": "inject",
+        "z": "fe8f37d1.2cdcd",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[7, 0]",
+        "payloadType": "json",
+        "x": 230,
+        "y": 180,
+        "wires": [
+            [
+                "0ad5ead1fe556403"
+            ]
+        ]
+    },
+    {
+        "id": "0ad5ead1fe556403",
+        "type": "function",
+        "z": "fe8f37d1.2cdcd",
+        "name": "",
+        "func": "const nbInputs = 3;\n\ncontext.handled = context.handled || Array(nbInputs).fill(false);\ncontext.sum = context.sum || [];\n\nif (!context.handled[msg.topic]) {\n    context.handled[msg.topic] = true;\n    context.sum = context.sum.concat(msg.payload);\n}\nmsg = null;\n\nif (context.handled.every((elem) => elem)) {\n    let result = context.sum;\n    context.handled = null;\n    context.sum = null;\n    return {payload: result};\n} else return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 280,
+        "wires": [
+            [
+                "53856c2d70c4e076",
+                "969133a0f6973cc5"
+            ]
+        ]
+    },
+    {
+        "id": "58effba0485edfb8",
+        "type": "inject",
+        "z": "fe8f37d1.2cdcd",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "v": "2",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[9, 8]",
+        "payloadType": "json",
+        "x": 220,
+        "y": 400,
+        "wires": [
+            [
+                "0ad5ead1fe556403"
+            ]
+        ]
+    },
+    {
+        "id": "53856c2d70c4e076",
+        "type": "debug",
+        "z": "fe8f37d1.2cdcd",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "fce66c42e195105b",
+        "type": "inject",
+        "z": "fe8f37d1.2cdcd",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[4,3,1]",
+        "payloadType": "json",
+        "x": 230,
+        "y": 280,
+        "wires": [
+            [
+                "0ad5ead1fe556403"
+            ]
+        ]
+    },
+    {
+        "id": "969133a0f6973cc5",
+        "type": "link out",
+        "z": "fe8f37d1.2cdcd",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "ea8a76b6bea9285f"
+        ],
+        "x": 625,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "27a735ffcedfead8",
+        "type": "inject",
+        "z": "fe8f37d1.2cdcd",
+        "name": "",
+        "props": [
+            {
+                "p": "cells",
+                "v": "Feuille1!C17:E17",
+                "vt": "str"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            },
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[15, 18, 9]",
+        "payloadType": "json",
+        "x": 300,
+        "y": 540,
+        "wires": [
+            [
+                "7a871f0748fea470"
+            ]
+        ]
+    },
+    {
+        "id": "7a871f0748fea470",
+        "type": "GSheet",
+        "z": "fe8f37d1.2cdcd",
+        "creds": "6c7199f554b64b5d",
+        "method": "update",
+        "action": "",
+        "sheet": "1WMV3AVzMabEID63oSJAtIh2OGlZt4BQfhsF8XEfNY0g",
+        "cells": "",
+        "flatten": false,
+        "name": "",
+        "x": 510,
+        "y": 540,
+        "wires": [
+            [
+                "259297a6c8953d36"
+            ]
+        ]
+    },
+    {
+        "id": "259297a6c8953d36",
+        "type": "debug",
+        "z": "fe8f37d1.2cdcd",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "af945392c71e2b84",
+        "type": "inject",
+        "z": "fe8f37d1.2cdcd",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 380,
+        "y": 80,
+        "wires": [
+            [
+                "aa7652c082608c2f"
+            ]
+        ]
+    },
+    {
+        "id": "aa7652c082608c2f",
+        "type": "function",
+        "z": "fe8f37d1.2cdcd",
+        "name": "",
+        "func": "let li = [2,5,8];\nlet li2 = li;\nli[0] = 99;\n\nmsg.payload = li2;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 80,
+        "wires": [
+            [
+                "b808577ca5704c96"
+            ]
+        ]
+    },
+    {
+        "id": "b808577ca5704c96",
+        "type": "debug",
+        "z": "fe8f37d1.2cdcd",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 80,
+        "wires": []
+    }
+]
