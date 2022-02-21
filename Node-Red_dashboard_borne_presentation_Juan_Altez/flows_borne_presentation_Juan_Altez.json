@@ -1,0 +1,2409 @@
+[
+    {
+        "id": "3a7fd4da90bdef8e",
+        "type": "tab",
+        "label": "example create python env and install packages",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "3b02c06e308bc46a",
+        "type": "tab",
+        "label": "Flow 4",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d7276cd2.d6f55",
+        "type": "tab",
+        "label": "pythontest",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "dd4db716.4d4f08",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 24,
+                "sy": 24,
+                "gx": 6,
+                "gy": 6,
+                "cx": 24,
+                "cy": 24,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "ec50c336.3c4ac",
+        "type": "ui_group",
+        "name": "Digital",
+        "tab": "992a1f6f.d4e268",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "35a7f096.815c58",
+        "type": "ui_group",
+        "name": "P1",
+        "tab": "f69e44291a04a36b",
+        "order": 1,
+        "disp": false,
+        "width": "15",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "49446484.5bf994",
+        "type": "ui_group",
+        "name": "P3",
+        "tab": "141684e0b065dcac",
+        "order": 9,
+        "disp": false,
+        "width": 15,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "dc052b57.116388",
+        "type": "ui_group",
+        "name": "P2",
+        "tab": "7db28b7b5e81225d",
+        "order": 1,
+        "disp": false,
+        "width": "15",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c2d9127a.414fb8",
+        "type": "ui_group",
+        "name": "Analog",
+        "tab": "992a1f6f.d4e268",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "992a1f6f.d4e268",
+        "type": "ui_tab",
+        "name": "Demo",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "51608762.f990f",
+        "type": "ui_group",
+        "name": "",
+        "tab": "dc779b3e5812a4ed",
+        "order": 1,
+        "disp": false,
+        "width": 20,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b389df50.19473",
+        "type": "ui_group",
+        "name": "PG",
+        "tab": "4468cd45745703e8",
+        "order": 4,
+        "disp": false,
+        "width": "15",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e9a45c1a.a0da",
+        "type": "ui_group",
+        "name": "PP1",
+        "tab": "4d8ad0a9e20691f7",
+        "order": 4,
+        "disp": false,
+        "width": 15,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4468cd45745703e8",
+        "type": "ui_tab",
+        "name": "Presentation",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "4d8ad0a9e20691f7",
+        "type": "ui_tab",
+        "name": "HIstoire du musée",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "dc779b3e5812a4ed",
+        "type": "ui_tab",
+        "name": "Menu",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f69e44291a04a36b",
+        "type": "ui_tab",
+        "name": "Sepiolite",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "7db28b7b5e81225d",
+        "type": "ui_tab",
+        "name": "Calcite",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "141684e0b065dcac",
+        "type": "ui_tab",
+        "name": "Azurite",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "2b481bb7e6452266",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "b389df50.19473",
+        "order": 2,
+        "width": 15,
+        "height": 1
+    },
+    {
+        "id": "b7a1204e1f05d56e",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "b389df50.19473",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c8bcd0eef91b0aa4",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "b389df50.19473",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "cdaa0a3cbac49b27",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "b389df50.19473",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "14088e898160d492",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "b389df50.19473",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e1d3920dd7b4d86f",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "b389df50.19473",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9b670b7f63878c22",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "b389df50.19473",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "5fe2306f40600faa",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "51608762.f990f",
+        "order": 1,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "51288f0e1fef38c1",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "51608762.f990f",
+        "order": 2,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "0e7c6c4a04f89c9a",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "51608762.f990f",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "21447eb47eb5ec68",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "51608762.f990f",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "be341f6b746d9d56",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "51608762.f990f",
+        "order": 7,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "ddeceb756f723cc2",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "51608762.f990f",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "06c2a74c2e59dd09",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "51608762.f990f",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "46e2e7953d8f9847",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "51608762.f990f",
+        "order": 10,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "56e268660561ae43",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "51608762.f990f",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e845c96fb39f8f10",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "51608762.f990f",
+        "order": 14,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c91126102eaae769",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "51608762.f990f",
+        "order": 16,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "7a2c49795accc9ec",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "51608762.f990f",
+        "order": 17,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "0fbac32cae6594d2",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "51608762.f990f",
+        "order": 18,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "fe1139c266308f96",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "51608762.f990f",
+        "order": 19,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "53cf571b8976c0a9",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "51608762.f990f",
+        "order": 21,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "c7fdf111da7de6f5",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "51608762.f990f",
+        "order": 22,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "f290b7f88185f143",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "51608762.f990f",
+        "order": 23,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "0fd9c1d5a61080d4",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "51608762.f990f",
+        "order": 24,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "ad07dffed6ed264f",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "51608762.f990f",
+        "order": 25,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "a83c0cd09508d6c2",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "51608762.f990f",
+        "order": 27,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "d0cd70b51c5c76a6",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "51608762.f990f",
+        "order": 28,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "fa9c9a17c0d71340",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "51608762.f990f",
+        "order": 29,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "7a99be3bd51a473c",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "49446484.5bf994",
+        "order": 2,
+        "width": 15,
+        "height": 1
+    },
+    {
+        "id": "4cf61ad2710b06fc",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "49446484.5bf994",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "1cb64f8c568c64b0",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "49446484.5bf994",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a913474936cb95f1",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "49446484.5bf994",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "bd7fcc8449da3830",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "49446484.5bf994",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "47fd2b7c67739f70",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "49446484.5bf994",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "7ca994367c3f6c68",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "49446484.5bf994",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "2c17bb3d188f60ab",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "dc052b57.116388",
+        "order": 2,
+        "width": 15,
+        "height": 1
+    },
+    {
+        "id": "cfe5550c75afde62",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "dc052b57.116388",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9d026831b86e6c67",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "dc052b57.116388",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "1b27eb74e90383b5",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "dc052b57.116388",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c86ed32040125ad8",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "dc052b57.116388",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "01672453328dbf19",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "dc052b57.116388",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "bf983bf5a1e64369",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "dc052b57.116388",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b077c56d631cba8c",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "e9a45c1a.a0da",
+        "order": 2,
+        "width": 15,
+        "height": 1
+    },
+    {
+        "id": "0d71388a35746bfa",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "e9a45c1a.a0da",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a38fb403ac3da364",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "e9a45c1a.a0da",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "30949d604fb8c969",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "e9a45c1a.a0da",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "cd3d97442e4b0d7e",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "e9a45c1a.a0da",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9e85b6028796b0eb",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "e9a45c1a.a0da",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "4d81ad8c2d5c8692",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "e9a45c1a.a0da",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9a8d1c1832a4e676",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "35a7f096.815c58",
+        "order": 2,
+        "width": 15,
+        "height": 1
+    },
+    {
+        "id": "ddd02b89b64b4e91",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "35a7f096.815c58",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c9e8c507db163fa3",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "35a7f096.815c58",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "0794a3ce9fb37426",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "35a7f096.815c58",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d01143af21b91d5e",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "35a7f096.815c58",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "512fa11d3ba5f648",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "35a7f096.815c58",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "5340dba7e9d2fce5",
+        "type": "ui_spacer",
+        "z": "3b02c06e308bc46a",
+        "name": "spacer",
+        "group": "35a7f096.815c58",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f18debf47797329b",
+        "type": "inject",
+        "z": "3a7fd4da90bdef8e",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 820,
+        "wires": [
+            [
+                "a6a3bc3a2a3fb67b",
+                "99e0b608763dcc11"
+            ]
+        ]
+    },
+    {
+        "id": "223645fc2697a5d1",
+        "type": "file",
+        "z": "3a7fd4da90bdef8e",
+        "name": "example.py",
+        "filename": "/home/pi/Desktop/data/example.py",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 530,
+        "y": 820,
+        "wires": [
+            [
+                "79ae605514827d90"
+            ]
+        ]
+    },
+    {
+        "id": "a6a3bc3a2a3fb67b",
+        "type": "template",
+        "z": "3a7fd4da90bdef8e",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "python",
+        "syntax": "plain",
+        "template": "import sys\n\ndef absolute_value(num):\n\t\"\"\"This function returns the absolute\n\tvalue of the entered number\"\"\"\n\n\tif num >= 0:\n\t\treturn num\n\telse:\n\t\treturn -num\n\n# Output: 2\n#print(absolute_value(2))\n\nwhile True:\n    num = sys.stdin.readline() # read the stdin from the inject node\n    num = int(num)\n    print(absolute_value(num))",
+        "output": "str",
+        "x": 300,
+        "y": 820,
+        "wires": [
+            [
+                "223645fc2697a5d1"
+            ]
+        ]
+    },
+    {
+        "id": "3f6c180a2b5dcd4e",
+        "type": "comment",
+        "z": "3a7fd4da90bdef8e",
+        "name": "create a python script file and save to disk",
+        "info": "",
+        "x": 340,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "6dd41c3329ab134a",
+        "type": "inject",
+        "z": "3a7fd4da90bdef8e",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 100,
+        "wires": [
+            [
+                "488c5601bff829c2"
+            ]
+        ]
+    },
+    {
+        "id": "ce79f3982a781901",
+        "type": "file",
+        "z": "3a7fd4da90bdef8e",
+        "name": "",
+        "filename": "/home/pi/Desktop/data/create_env.sh",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 590,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "488c5601bff829c2",
+        "type": "template",
+        "z": "3a7fd4da90bdef8e",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "python",
+        "syntax": "plain",
+        "template": "#!/bin/bash \n\ncd /data\nls -l\npython3 -m venv envtest\nsource envtest/bin/activate\nls -l\nwhich python",
+        "output": "str",
+        "x": 300,
+        "y": 100,
+        "wires": [
+            [
+                "ce79f3982a781901"
+            ]
+        ]
+    },
+    {
+        "id": "4402906c7e4f1bc5",
+        "type": "inject",
+        "z": "3a7fd4da90bdef8e",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 200,
+        "wires": [
+            [
+                "f3c702e4a5df52c1"
+            ]
+        ]
+    },
+    {
+        "id": "f3c702e4a5df52c1",
+        "type": "exec",
+        "z": "3a7fd4da90bdef8e",
+        "command": "chmod u+x /home/pi/Desktop/data/create_env.sh",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "make create_env.sh file executable",
+        "x": 380,
+        "y": 200,
+        "wires": [
+            [
+                "47fc3f18d2ea04f1"
+            ],
+            [
+                "47fc3f18d2ea04f1"
+            ],
+            [
+                "47fc3f18d2ea04f1"
+            ]
+        ]
+    },
+    {
+        "id": "47fc3f18d2ea04f1",
+        "type": "debug",
+        "z": "3a7fd4da90bdef8e",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 610,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "9f7fd6a7e022ad6e",
+        "type": "inject",
+        "z": "3a7fd4da90bdef8e",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 320,
+        "wires": [
+            [
+                "73c9d935e23a2ac9"
+            ]
+        ]
+    },
+    {
+        "id": "73c9d935e23a2ac9",
+        "type": "exec",
+        "z": "3a7fd4da90bdef8e",
+        "command": "bash /home/pi/Desktop/data/create_env.sh",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "true",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "execute create_env.sh",
+        "x": 340,
+        "y": 320,
+        "wires": [
+            [
+                "c87f82fd47e67f5a"
+            ],
+            [
+                "c87f82fd47e67f5a"
+            ],
+            [
+                "c87f82fd47e67f5a"
+            ]
+        ]
+    },
+    {
+        "id": "c87f82fd47e67f5a",
+        "type": "debug",
+        "z": "3a7fd4da90bdef8e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 590,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "9decd5ddb3a1ef88",
+        "type": "inject",
+        "z": "3a7fd4da90bdef8e",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 540,
+        "wires": [
+            [
+                "4472471b428a44f4"
+            ]
+        ]
+    },
+    {
+        "id": "4472471b428a44f4",
+        "type": "exec",
+        "z": "3a7fd4da90bdef8e",
+        "command": "chmod u+x /home/pi/Desktop/data/install_packages.sh",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "true",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "make install_packages.sh file executable",
+        "x": 400,
+        "y": 540,
+        "wires": [
+            [
+                "4189f32485965f46"
+            ],
+            [
+                "4189f32485965f46"
+            ],
+            [
+                "4189f32485965f46"
+            ]
+        ]
+    },
+    {
+        "id": "4189f32485965f46",
+        "type": "debug",
+        "z": "3a7fd4da90bdef8e",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 670,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "377ca73ae37a61ad",
+        "type": "inject",
+        "z": "3a7fd4da90bdef8e",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 680,
+        "wires": [
+            [
+                "a3cd884a941ce152"
+            ]
+        ]
+    },
+    {
+        "id": "a3cd884a941ce152",
+        "type": "exec",
+        "z": "3a7fd4da90bdef8e",
+        "command": "bash /home/pi/Desktop/data/install_packages.sh",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "true",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "execute /install_packages.sh",
+        "x": 360,
+        "y": 680,
+        "wires": [
+            [
+                "ba22205c040bb583"
+            ],
+            [
+                "ba22205c040bb583"
+            ],
+            [
+                "ba22205c040bb583"
+            ]
+        ]
+    },
+    {
+        "id": "ba22205c040bb583",
+        "type": "debug",
+        "z": "3a7fd4da90bdef8e",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 590,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "560cce830d69f8a9",
+        "type": "comment",
+        "z": "3a7fd4da90bdef8e",
+        "name": "create bash file that creates and activates venv",
+        "info": "In the template node we create a bash file that will create a virtual python environment and activate the environment.\n\n#!/bin/bash \n\ncd /data\nls -l\npython3 -m venv envtest\nsource envtest/bin/activate\nls -l\nwhich python",
+        "x": 340,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "3a66610d94fd650b",
+        "type": "comment",
+        "z": "3a7fd4da90bdef8e",
+        "name": "make the bash file executable",
+        "info": "",
+        "x": 280,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "ee65b7e9e8328425",
+        "type": "comment",
+        "z": "3a7fd4da90bdef8e",
+        "name": "make the bash file executable",
+        "info": "",
+        "x": 300,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "027ab6e8c0531407",
+        "type": "comment",
+        "z": "3a7fd4da90bdef8e",
+        "name": "execute the bash file",
+        "info": "",
+        "x": 250,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "5ec12ce7975e5705",
+        "type": "inject",
+        "z": "3a7fd4da90bdef8e",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 420,
+        "wires": [
+            [
+                "55414c7a8f88e8ba"
+            ]
+        ]
+    },
+    {
+        "id": "c89cc96162770f89",
+        "type": "file",
+        "z": "3a7fd4da90bdef8e",
+        "name": "",
+        "filename": "/home/pi/Desktop/data/install_packages.sh",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 670,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "55414c7a8f88e8ba",
+        "type": "template",
+        "z": "3a7fd4da90bdef8e",
+        "name": "file to install packages",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "python",
+        "syntax": "plain",
+        "template": "\ncd /data\nsource envtest/bin/activate\nls -l\nwhich python\nsudo python3 pip install sys gpiozero SpeechRecognition gTTS pygame random os python-vlc python-time\n",
+        "output": "str",
+        "x": 340,
+        "y": 420,
+        "wires": [
+            [
+                "c89cc96162770f89"
+            ]
+        ]
+    },
+    {
+        "id": "740470b80bc276c1",
+        "type": "comment",
+        "z": "3a7fd4da90bdef8e",
+        "name": "create bash file that installs packages",
+        "info": "",
+        "x": 270,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "4e1d7e70b86a9641",
+        "type": "comment",
+        "z": "3a7fd4da90bdef8e",
+        "name": "execute the bash file to install packages",
+        "info": "",
+        "x": 330,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "8413db3f1457e8c2",
+        "type": "debug",
+        "z": "3a7fd4da90bdef8e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 680,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "9570df3f3774a70a",
+        "type": "pythonshell in",
+        "z": "3a7fd4da90bdef8e",
+        "name": "example",
+        "pyfile": "/home/pi/Desktop/data/example.py",
+        "virtualenv": "/home/pi/Desktop/data/envtest",
+        "continuous": true,
+        "stdInData": true,
+        "x": 400,
+        "y": 920,
+        "wires": [
+            [
+                "8413db3f1457e8c2"
+            ]
+        ]
+    },
+    {
+        "id": "afe4bda7f665fa54",
+        "type": "inject",
+        "z": "3a7fd4da90bdef8e",
+        "name": "inject number",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "-2",
+        "payloadType": "num",
+        "x": 130,
+        "y": 920,
+        "wires": [
+            [
+                "9570df3f3774a70a"
+            ]
+        ]
+    },
+    {
+        "id": "c5f05264fe02bcc3",
+        "type": "comment",
+        "z": "3a7fd4da90bdef8e",
+        "name": "inject a number to the python script and display it in the debug window",
+        "info": "",
+        "x": 430,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "79ae605514827d90",
+        "type": "debug",
+        "z": "3a7fd4da90bdef8e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 690,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "99e0b608763dcc11",
+        "type": "template",
+        "z": "3a7fd4da90bdef8e",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "python",
+        "syntax": "mustache",
+        "template": "from gpiozero import Button\nimport SpeechRecognition as sr\nfrom gtts import gTTS\nimport pygame # Audio mixer\nimport random\nimport os\nimport vlc\nimport numpy as np\nimport time\n\nbutton = Button(17)\nlanguage = 'fr'\n\n\n\nclass person:\n    name = ''\n    def setName(self, name):\n        self.name = name\n\n# Check for multiple sentences triggering the same answer\ndef there_exists(terms):\n    for term in terms:\n        if term in response:\n            return True\n\n# initialise a recogniser\npi_ear = sr.Recognizer()\nmediaPlay = False\n\n\n\n# Playing the converted file\ndef play(mytext):\n    myobj = gTTS(text=mytext, lang='fr', slow=False)\n    r = random.randint(1,20000000)\n    audio_file = 'audio' + str(r) + '.mp3'\n    myobj.save(audio_file)\n    #print(f\"bot: {mytext}\") # print what app said\n    # play the audio file\n    pygame.mixer.init()\n    pygame.mixer.music.load(audio_file)\n    pygame.mixer.music.play()\n    while pygame.mixer.music.get_busy() == True:\n        continue\n    os.remove(audio_file) # remove audio file\n\ndef record_audio():\n    with sr.Microphone() as source:  \n        pi_ear.adjust_for_ambient_noise(source, duration=0.5)\n        pi_ear.dynamic_energy_threshold = 3000\n        play(\"J'écoute\")\n        print(\"J'écoute\")\n        time.sleep(0.5)\n        audio = pi_ear.listen(source, timeout=1.5)\n        response = ''\n        try:\n            response = pi_ear.recognize_google(audio, language=\"fr-FR\")\n        except sr.UnknownValueError:\n            play(\"Je ne comprends pas\")\n        except sr.RequestError:\n            play(\"Désolé, le service n'est pas disponible\")\n        print(f\">> {response.lower()}\") # print what user said\n        return response.lower()\n''''\ndef play_video(link):\n    # Create a VideoCapture object and read from input file\n    cap = cv2.VideoCapture(link)\n\n    # Check if camera opened successfully\n    if (cap.isOpened()== False):\n        print(\"Error opening video file\")\n\n    # Read until video is completed\n    while(cap.isOpened()):\n        \n        # Capture frame-by-frame\n        ret, frame = cap.read()\n        if ret == True:\n\n            # Display the resulting frame\n            cv2.imshow('Frame', frame)\n\n            # Press Q on keyboard to exit\n            if cv2.waitKey(25) & 0xFF == ord('q'):\n                break\n\n        # Break the loop\n        else:\n            break\n\n    # When everything done, release\n    # the video capture object\n    cap.release()\n\n    # Closes all the frames\n    cv2.destroyAllWindows()\n'''\n\ndef play_vlc(link):\n    media_player = vlc.MediaPlayer()\n    media = vlc.Media(link)\n    media_player.set_media(media)\n    media_player.video_set_scale(0.6)\n    media_player.play()\n    global mediaPlay\n    mediaPlay = True\n\ndef respond(response):\n\n    # greetings\n    global mediaPlay\n    if there_exists(['bonjour', \"salut\", \"hey\"]):\n        play(\"Bonjour chers visiteurs, bienvenue au Musée de Minéralogie.\")\n        #return({'payload':\"https://www.youtube.com/embed/tgbNymZ7vqY\"})\n        play_vlc(\"/home/pi/Desktop/Video intro.mp4\")\n        mediaPlay = False\n        play(\"Voulez-vous voir la vidéo sur l'histoire du musée ou sur la sépiolite ? \")\n\n    if there_exists(['sépiolite']):\n        play(\"Voici la vidéo sur la sépiolite\")\n        play_vlc(\"/home/pi/Desktop/Video Musée/Sépiolite.mp4\")\n        mediaPlay = False\n        play(\"Voulez-vous voir la vidéo sur l'histoire du musée ou sur la sépiolite ? \")\n\n    if there_exists(['histoire', 'musée']):\n        play(\"Voici la vidéo sur l'histoire du musée\")\n        play_vlc(\"/home/pi/Desktop/Video Musée/histoire.mp4\")\n        mediaPlay = False\n        play(\"Voulez-vous voir la vidéo sur l'histoire du musée ou sur la sépiolite ? \")\n\n    # au revoir \n    if there_exists([\"stop\", \"au revoir\", \"non merci\"]):\n        play(\"Merci et à bientôt\")\n        exit()\n\nperson_obj = person()\nwhile True:\n    button.wait_for_press()\n    if mediaPlay == False:\n        response = record_audio()\n        respond(response)\n",
+        "output": "str",
+        "x": 280,
+        "y": 1040,
+        "wires": [
+            [
+                "e87f1c0d86b157fa"
+            ]
+        ]
+    },
+    {
+        "id": "e87f1c0d86b157fa",
+        "type": "file",
+        "z": "3a7fd4da90bdef8e",
+        "name": "",
+        "filename": "/home/pi/Desktop/data/main_app.py",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 550,
+        "y": 1040,
+        "wires": [
+            [
+                "a5ca67f8374a28d6"
+            ]
+        ]
+    },
+    {
+        "id": "a5ca67f8374a28d6",
+        "type": "debug",
+        "z": "3a7fd4da90bdef8e",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 810,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "055cf2fbe685e220",
+        "type": "rpi-gpio out",
+        "z": "3b02c06e308bc46a",
+        "name": "LED",
+        "pin": "18",
+        "set": true,
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 830,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "16ceab385638b06f",
+        "type": "ui_template",
+        "z": "3b02c06e308bc46a",
+        "group": "e9a45c1a.a0da",
+        "name": "Youtube_screen",
+        "order": 1,
+        "width": 15,
+        "height": 9,
+        "format": "<div style=\"width: 100%; height:100%\">\n    <iframe id=\"iframe\" style=\"width: 100%; height:100%\" src=\"\"></iframe>\n</div>\n\n<script> \n    (function(scope) {\n        // Watch for messages being send to this template node\n        scope.$watch('msg', function (msg) {      \n            if (msg) {\n\n                var iframe = document.getElementById('iframe');\n                iframe.src = msg.payload + \"?autoplay=1;start=2\";\n            }       \n         }); \n    })(scope); \n</script>\n\n\n\n",
+        "storeOutMessages": false,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 440,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d1db9ee2cdb58b19",
+        "type": "ui_button",
+        "z": "3b02c06e308bc46a",
+        "name": "",
+        "group": "e9a45c1a.a0da",
+        "order": 4,
+        "width": 6,
+        "height": 2,
+        "passthru": false,
+        "label": "Play video",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "https://www.youtube.com/embed/jyfV9rzizxc",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 170,
+        "y": 140,
+        "wires": [
+            [
+                "6d7c7317b43b790e",
+                "16ceab385638b06f"
+            ]
+        ]
+    },
+    {
+        "id": "182f8956576e2752",
+        "type": "ui_button",
+        "z": "3b02c06e308bc46a",
+        "name": "",
+        "group": "51608762.f990f",
+        "order": 3,
+        "width": 8,
+        "height": 2,
+        "passthru": false,
+        "label": "Présentation générale du Musée",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\":\"Presentation\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 210,
+        "y": 680,
+        "wires": [
+            [
+                "1236935f99c73fc1"
+            ]
+        ]
+    },
+    {
+        "id": "02b130f4bdb7c9c8",
+        "type": "ui_button",
+        "z": "3b02c06e308bc46a",
+        "name": "",
+        "group": "51608762.f990f",
+        "order": 5,
+        "width": 8,
+        "height": 2,
+        "passthru": false,
+        "label": "Histoire de Musée et de l'École",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\":\"HIstoire du musée\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 210,
+        "y": 740,
+        "wires": [
+            [
+                "1236935f99c73fc1"
+            ]
+        ]
+    },
+    {
+        "id": "1236935f99c73fc1",
+        "type": "ui_ui_control",
+        "z": "3b02c06e308bc46a",
+        "name": "",
+        "events": "all",
+        "x": 480,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b0482097ec9417cf",
+        "type": "ui_button",
+        "z": "3b02c06e308bc46a",
+        "name": "",
+        "group": "b389df50.19473",
+        "order": 4,
+        "width": 6,
+        "height": 2,
+        "passthru": false,
+        "label": "Play video",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "https://www.youtube.com/embed/v0I9X21g4nA",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 150,
+        "y": 40,
+        "wires": [
+            [
+                "84eb7c1536f7649e"
+            ]
+        ]
+    },
+    {
+        "id": "e717cbd696ebf585",
+        "type": "ui_button",
+        "z": "3b02c06e308bc46a",
+        "name": "",
+        "group": "b389df50.19473",
+        "order": 6,
+        "width": 6,
+        "height": 2,
+        "passthru": false,
+        "label": "Retour à Menu",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\":\"Menu\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 680,
+        "y": 40,
+        "wires": [
+            [
+                "ca9f417df8ca8435"
+            ]
+        ]
+    },
+    {
+        "id": "ca9f417df8ca8435",
+        "type": "ui_ui_control",
+        "z": "3b02c06e308bc46a",
+        "name": "",
+        "events": "all",
+        "x": 880,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d3c6cdd97385f410",
+        "type": "ui_button",
+        "z": "3b02c06e308bc46a",
+        "name": "",
+        "group": "e9a45c1a.a0da",
+        "order": 6,
+        "width": 6,
+        "height": 2,
+        "passthru": false,
+        "label": "Retour à Menu",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\":\"Menu\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 180,
+        "y": 200,
+        "wires": [
+            [
+                "5ad5684b8dd78b1b",
+                "cc3102b5bacf5a94"
+            ]
+        ]
+    },
+    {
+        "id": "5ad5684b8dd78b1b",
+        "type": "ui_ui_control",
+        "z": "3b02c06e308bc46a",
+        "name": "",
+        "events": "all",
+        "x": 420,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6d7c7317b43b790e",
+        "type": "change",
+        "z": "3b02c06e308bc46a",
+        "name": "1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 200,
+        "wires": [
+            [
+                "055cf2fbe685e220"
+            ]
+        ]
+    },
+    {
+        "id": "cc3102b5bacf5a94",
+        "type": "change",
+        "z": "3b02c06e308bc46a",
+        "name": "0",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 140,
+        "wires": [
+            [
+                "055cf2fbe685e220"
+            ]
+        ]
+    },
+    {
+        "id": "415907dde032f3e8",
+        "type": "ui_button",
+        "z": "3b02c06e308bc46a",
+        "name": "",
+        "group": "51608762.f990f",
+        "order": 20,
+        "width": 12,
+        "height": 2,
+        "passthru": false,
+        "label": "Activer assitent vocal: s'il vous plait pussez le button physique",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 270,
+        "y": 600,
+        "wires": [
+            [
+                "38abbe166225abd9"
+            ]
+        ]
+    },
+    {
+        "id": "f995194b8d052c33",
+        "type": "ui_button",
+        "z": "3b02c06e308bc46a",
+        "name": "",
+        "group": "51608762.f990f",
+        "order": 26,
+        "width": 12,
+        "height": 2,
+        "passthru": false,
+        "label": "Finir assistant vocal et video",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 160,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "38abbe166225abd9",
+        "type": "exec",
+        "z": "3b02c06e308bc46a",
+        "command": "python3 /home/pi/Desktop/main_app.py",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 740,
+        "y": 580,
+        "wires": [
+            [
+                "6f340cf513985b81"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "dc6ea680d8ee9ce7",
+        "type": "template",
+        "z": "3b02c06e308bc46a",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "python",
+        "syntax": "mustache",
+        "template": "from gpiozero import Button\nimport speech_recognition as sr\nfrom gtts import gTTS\nimport pygame # Audio mixer\nimport random\nimport os\nimport vlc\nimport numpy as np\nimport time\n\nbutton = Button(17)\nlanguage = 'fr'\n\n\n\nclass person:\n    name = ''\n    def setName(self, name):\n        self.name = name\n\n# Check for multiple sentences triggering the same answer\ndef there_exists(terms):\n    for term in terms:\n        if term in response:\n            return True\n\n# initialise a recogniser\npi_ear = sr.Recognizer()\nmediaPlay = False\n\n\n\n# Playing the converted file\ndef play(mytext):\n    myobj = gTTS(text=mytext, lang='fr', slow=False)\n    r = random.randint(1,20000000)\n    audio_file = 'audio' + str(r) + '.mp3'\n    myobj.save(audio_file)\n    #print(f\"bot: {mytext}\") # print what app said\n    # play the audio file\n    pygame.mixer.init()\n    pygame.mixer.music.load(audio_file)\n    pygame.mixer.music.play()\n    while pygame.mixer.music.get_busy() == True:\n        continue\n    os.remove(audio_file) # remove audio file\n\ndef record_audio():\n    with sr.Microphone() as source:  \n        pi_ear.adjust_for_ambient_noise(source, duration=0.5)\n        pi_ear.dynamic_energy_threshold = 3000\n        play(\"J'écoute\")\n        print(\"J'écoute\")\n        time.sleep(0.5)\n        audio = pi_ear.listen(source, timeout=1.5)\n        response = ''\n        try:\n            response = pi_ear.recognize_google(audio, language=\"fr-FR\")\n        except sr.UnknownValueError:\n            play(\"Je ne comprends pas\")\n        except sr.RequestError:\n            play(\"Désolé, le service n'est pas disponible\")\n        print(f\">> {response.lower()}\") # print what user said\n        return response.lower()\n''''\ndef play_video(link):\n    # Create a VideoCapture object and read from input file\n    cap = cv2.VideoCapture(link)\n\n    # Check if camera opened successfully\n    if (cap.isOpened()== False):\n        print(\"Error opening video file\")\n\n    # Read until video is completed\n    while(cap.isOpened()):\n        \n        # Capture frame-by-frame\n        ret, frame = cap.read()\n        if ret == True:\n\n            # Display the resulting frame\n            cv2.imshow('Frame', frame)\n\n            # Press Q on keyboard to exit\n            if cv2.waitKey(25) & 0xFF == ord('q'):\n                break\n\n        # Break the loop\n        else:\n            break\n\n    # When everything done, release\n    # the video capture object\n    cap.release()\n\n    # Closes all the frames\n    cv2.destroyAllWindows()\n'''\n\ndef play_vlc(link):\n    media_player = vlc.MediaPlayer()\n    media = vlc.Media(link)\n    media_player.set_media(media)\n    media_player.video_set_scale(0.6)\n    media_player.play()\n    global mediaPlay\n    mediaPlay = True\n\ndef respond(response):\n\n    # greetings\n    global mediaPlay\n    if there_exists(['bonjour', \"salut\", \"hey\"]):\n        play(\"Bonjour chers visiteurs, bienvenue au Musée de Minéralogie.\")\n        #return({'payload':\"https://www.youtube.com/embed/tgbNymZ7vqY\"})\n        play_vlc(\"/home/pi/Desktop/Video intro.mp4\")\n        mediaPlay = False\n        play(\"Voulez-vous voir la vidéo sur l'histoire du musée ou sur la sépiolite ? \")\n\n    if there_exists(['sépiolite']):\n        play(\"Voici la vidéo sur la sépiolite\")\n        play_vlc(\"/home/pi/Desktop/Video Musée/Sépiolite.mp4\")\n        mediaPlay = False\n        play(\"Voulez-vous voir la vidéo sur l'histoire du musée ou sur la sépiolite ? \")\n\n    if there_exists(['histoire', 'musée']):\n        play(\"Voici la vidéo sur l'histoire du musée\")\n        play_vlc(\"/home/pi/Desktop/Video Musée/histoire.mp4\")\n        mediaPlay = False\n        play(\"Voulez-vous voir la vidéo sur l'histoire du musée ou sur la sépiolite ? \")\n\n    # au revoir \n    if there_exists([\"stop\", \"au revoir\", \"non merci\"]):\n        play(\"Merci et à bientôt\")\n        exit()\n\nperson_obj = person()\nwhile True:\n    button.wait_for_press()\n    if mediaPlay == False:\n        response = record_audio()\n        respond(response)\n",
+        "output": "str",
+        "x": 580,
+        "y": 940,
+        "wires": [
+            [
+                "a91631da622f8950"
+            ]
+        ]
+    },
+    {
+        "id": "a91631da622f8950",
+        "type": "file",
+        "z": "3b02c06e308bc46a",
+        "name": "",
+        "filename": "main_app.py",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 770,
+        "y": 940,
+        "wires": [
+            [
+                "c63c528b6ec06ed1"
+            ]
+        ]
+    },
+    {
+        "id": "c63c528b6ec06ed1",
+        "type": "exec",
+        "z": "3b02c06e308bc46a",
+        "command": "python3 main_app.py",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "true",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 1040,
+        "y": 940,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "0f0d05a20503aaf4",
+        "type": "debug",
+        "z": "3b02c06e308bc46a",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 920,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "ceddad207bb53da8",
+        "type": "pythonshell in",
+        "z": "3b02c06e308bc46a",
+        "name": "main",
+        "pyfile": "/home/pi/Desktop/data/main_app.py",
+        "virtualenv": "/home/pi/Desktop/data/envtest",
+        "continuous": true,
+        "stdInData": true,
+        "x": 710,
+        "y": 780,
+        "wires": [
+            [
+                "0f0d05a20503aaf4"
+            ]
+        ]
+    },
+    {
+        "id": "6f340cf513985b81",
+        "type": "debug",
+        "z": "3b02c06e308bc46a",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 980,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "7fdf8b403bd94356",
+        "type": "python-function",
+        "z": "3b02c06e308bc46a",
+        "name": "",
+        "func": "from gpiozero import Button\nimport speech_recognition as sr\nfrom gtts import gTTS\nimport pygame # Audio mixer\nimport random\nimport os\nimport vlc\nimport numpy as np\nimport time\n\nbutton = Button(17)\nlanguage = 'fr'\n\n\n\nclass person:\n    name = ''\n    def setName(self, name):\n        self.name = name\n\n# Check for multiple sentences triggering the same answer\ndef there_exists(terms):\n    for term in terms:\n        if term in response:\n            return True\n\n# initialise a recogniser\npi_ear = sr.Recognizer()\nmediaPlay = False\n\n\n\n# Playing the converted file\ndef play(mytext):\n    myobj = gTTS(text=mytext, lang='fr', slow=False)\n    r = random.randint(1,20000000)\n    audio_file = 'audio' + str(r) + '.mp3'\n    myobj.save(audio_file)\n    #print(f\"bot: {mytext}\") # print what app said\n    # play the audio file\n    pygame.mixer.init()\n    pygame.mixer.music.load(audio_file)\n    pygame.mixer.music.play()\n    while pygame.mixer.music.get_busy() == True:\n        continue\n    os.remove(audio_file) # remove audio file\n\ndef record_audio():\n    with sr.Microphone() as source:  \n        pi_ear.adjust_for_ambient_noise(source, duration=0.5)\n        pi_ear.dynamic_energy_threshold = 3000\n        play(\"J'écoute\")\n        print(\"J'écoute\")\n        time.sleep(0.5)\n        audio = pi_ear.listen(source, timeout=1.5)\n        response = ''\n        try:\n            response = pi_ear.recognize_google(audio, language=\"fr-FR\")\n        except sr.UnknownValueError:\n            play(\"Je ne comprends pas\")\n        except sr.RequestError:\n            play(\"Désolé, le service n'est pas disponible\")\n        print(f\">> {response.lower()}\") # print what user said\n        return response.lower()\n''''\ndef play_video(link):\n    # Create a VideoCapture object and read from input file\n    cap = cv2.VideoCapture(link)\n\n    # Check if camera opened successfully\n    if (cap.isOpened()== False):\n        print(\"Error opening video file\")\n\n    # Read until video is completed\n    while(cap.isOpened()):\n        \n        # Capture frame-by-frame\n        ret, frame = cap.read()\n        if ret == True:\n\n            # Display the resulting frame\n            cv2.imshow('Frame', frame)\n\n            # Press Q on keyboard to exit\n            if cv2.waitKey(25) & 0xFF == ord('q'):\n                break\n\n        # Break the loop\n        else:\n            break\n\n    # When everything done, release\n    # the video capture object\n    cap.release()\n\n    # Closes all the frames\n    cv2.destroyAllWindows()\n'''\n\ndef play_vlc(link):\n    media_player = vlc.MediaPlayer()\n    media = vlc.Media(link)\n    media_player.set_media(media)\n    media_player.video_set_scale(0.6)\n    media_player.play()\n    global mediaPlay\n    mediaPlay = True\n\ndef respond(response):\n\n    # greetings\n    global mediaPlay\n    if there_exists(['bonjour', \"salut\", \"hey\"]):\n        play(\"Bonjour chers visiteurs, bienvenue au Musée de Minéralogie.\")\n        #return({'payload':\"https://www.youtube.com/embed/tgbNymZ7vqY\"})\n        play_vlc(\"/home/pi/Desktop/Video intro.mp4\")\n        mediaPlay = False\n        play(\"Voulez-vous voir la vidéo sur l'histoire du musée ou sur la sépiolite ? \")\n\n    if there_exists(['sépiolite']):\n        play(\"Voici la vidéo sur la sépiolite\")\n        play_vlc(\"/home/pi/Desktop/Video Musée/Sépiolite.mp4\")\n        mediaPlay = False\n        play(\"Voulez-vous voir la vidéo sur l'histoire du musée ou sur la sépiolite ? \")\n\n    if there_exists(['histoire', 'musée']):\n        play(\"Voici la vidéo sur l'histoire du musée\")\n        play_vlc(\"/home/pi/Desktop/Video Musée/histoire.mp4\")\n        mediaPlay = False\n        play(\"Voulez-vous voir la vidéo sur l'histoire du musée ou sur la sépiolite ? \")\n\n    # au revoir \n    if there_exists([\"stop\", \"au revoir\", \"non merci\"]):\n        play(\"Merci et à bientôt\")\n        exit()\n\nperson_obj = person()\nwhile True:\n    button.wait_for_press()\n    if mediaPlay == False:\n        response = record_audio()\n        respond(response)\n",
+        "outputs": 1,
+        "x": 700,
+        "y": 1060,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6cb8b3325721651e",
+        "type": "ui_button",
+        "z": "3b02c06e308bc46a",
+        "name": "",
+        "group": "51608762.f990f",
+        "order": 11,
+        "width": 7,
+        "height": 2,
+        "passthru": false,
+        "label": "Présentation de la Sépiolite",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\":\"Sepiolite\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 200,
+        "y": 800,
+        "wires": [
+            [
+                "1236935f99c73fc1"
+            ]
+        ]
+    },
+    {
+        "id": "a78436c2b91adbe5",
+        "type": "ui_button",
+        "z": "3b02c06e308bc46a",
+        "name": "",
+        "group": "51608762.f990f",
+        "order": 13,
+        "width": 6,
+        "height": 2,
+        "passthru": false,
+        "label": "Présentation de la Calcite",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\":\"Calcite\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 210,
+        "y": 860,
+        "wires": [
+            [
+                "1236935f99c73fc1"
+            ]
+        ]
+    },
+    {
+        "id": "6d331c23096623cb",
+        "type": "ui_button",
+        "z": "3b02c06e308bc46a",
+        "name": "",
+        "group": "51608762.f990f",
+        "order": 15,
+        "width": 5,
+        "height": 2,
+        "passthru": false,
+        "label": "Présentation de l'Azurite",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\":\"Azurite\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 210,
+        "y": 920,
+        "wires": [
+            [
+                "1236935f99c73fc1"
+            ]
+        ]
+    },
+    {
+        "id": "84eb7c1536f7649e",
+        "type": "ui_template",
+        "z": "3b02c06e308bc46a",
+        "group": "b389df50.19473",
+        "name": "Youtube_screen",
+        "order": 1,
+        "width": 15,
+        "height": 9,
+        "format": "<div style=\"width: 100%; height:100%\">\n    <iframe id=\"iframe\" style=\"width: 100%; height:100%\" src=\"\"></iframe>\n</div>\n\n<script> \n    (function(scope) {\n        // Watch for messages being send to this template node\n        scope.$watch('msg', function (msg) {      \n            if (msg) {\n\n                var iframe = document.getElementById('iframe');\n                iframe.src = msg.payload + \"?autoplay=1;start=2\";\n            }       \n         }); \n    })(scope); \n</script>\n\n\n\n",
+        "storeOutMessages": false,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 440,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "94884c3ffca64190",
+        "type": "ui_button",
+        "z": "3b02c06e308bc46a",
+        "name": "",
+        "group": "35a7f096.815c58",
+        "order": 4,
+        "width": 6,
+        "height": 2,
+        "passthru": false,
+        "label": "Play video",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "https://www.youtube.com/embed/gAz2pZNoghA",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 170,
+        "y": 300,
+        "wires": [
+            [
+                "5c038fd7ec38850d"
+            ]
+        ]
+    },
+    {
+        "id": "5c038fd7ec38850d",
+        "type": "ui_template",
+        "z": "3b02c06e308bc46a",
+        "group": "35a7f096.815c58",
+        "name": "Youtube_screen",
+        "order": 1,
+        "width": 15,
+        "height": 9,
+        "format": "<div style=\"width: 100%; height:100%\">\n    <iframe id=\"iframe\" style=\"width: 100%; height:100%\" src=\"\"></iframe>\n</div>\n\n<script> \n    (function(scope) {\n        // Watch for messages being send to this template node\n        scope.$watch('msg', function (msg) {      \n            if (msg) {\n\n                var iframe = document.getElementById('iframe');\n                iframe.src = msg.payload + \"?autoplay=1;start=2\";\n            }       \n         }); \n    })(scope); \n</script>\n\n\n\n",
+        "storeOutMessages": false,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 460,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9417db9b2e5ce60c",
+        "type": "ui_button",
+        "z": "3b02c06e308bc46a",
+        "name": "",
+        "group": "dc052b57.116388",
+        "order": 4,
+        "width": 6,
+        "height": 2,
+        "passthru": false,
+        "label": "Play video",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "https://www.youtube.com/embed/YMDdCPrGjQ4",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 170,
+        "y": 360,
+        "wires": [
+            [
+                "61e2246c19c57be8"
+            ]
+        ]
+    },
+    {
+        "id": "2fdb3878afca8a7a",
+        "type": "ui_button",
+        "z": "3b02c06e308bc46a",
+        "name": "",
+        "group": "49446484.5bf994",
+        "order": 4,
+        "width": 6,
+        "height": 2,
+        "passthru": false,
+        "label": "Play video",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "https://www.youtube.com/embed/ThpYZ5-ftjY",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 170,
+        "y": 420,
+        "wires": [
+            [
+                "72ecd9231106cfcc"
+            ]
+        ]
+    },
+    {
+        "id": "72ecd9231106cfcc",
+        "type": "ui_template",
+        "z": "3b02c06e308bc46a",
+        "group": "49446484.5bf994",
+        "name": "Youtube_screen",
+        "order": 1,
+        "width": 15,
+        "height": 8,
+        "format": "<div style=\"width: 100%; height:100%\">\n    <iframe id=\"iframe\" style=\"width: 100%; height:100%\" src=\"\"></iframe>\n</div>\n\n<script> \n    (function(scope) {\n        // Watch for messages being send to this template node\n        scope.$watch('msg', function (msg) {      \n            if (msg) {\n\n                var iframe = document.getElementById('iframe');\n                iframe.src = msg.payload + \"?autoplay=1;start=2\";\n            }       \n         }); \n    })(scope); \n</script>\n\n\n\n",
+        "storeOutMessages": false,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 440,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "61e2246c19c57be8",
+        "type": "ui_template",
+        "z": "3b02c06e308bc46a",
+        "group": "dc052b57.116388",
+        "name": "Youtube_screen",
+        "order": 1,
+        "width": 15,
+        "height": 9,
+        "format": "<div style=\"width: 100%; height:100%\">\n    <iframe id=\"iframe\" style=\"width: 100%; height:100%\" src=\"\"></iframe>\n</div>\n\n<script> \n    (function(scope) {\n        // Watch for messages being send to this template node\n        scope.$watch('msg', function (msg) {      \n            if (msg) {\n\n                var iframe = document.getElementById('iframe');\n                iframe.src = msg.payload + \"?autoplay=1;start=2\";\n            }       \n         }); \n    })(scope); \n</script>\n\n\n\n",
+        "storeOutMessages": false,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 448,
+        "y": 363,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a9d41a0faa1c101b",
+        "type": "ui_button",
+        "z": "3b02c06e308bc46a",
+        "name": "",
+        "group": "35a7f096.815c58",
+        "order": 6,
+        "width": 6,
+        "height": 2,
+        "passthru": false,
+        "label": "Retour à Menu",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\":\"Menu\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 701,
+        "y": 301,
+        "wires": [
+            [
+                "a85301e48fd561f0"
+            ]
+        ]
+    },
+    {
+        "id": "a85301e48fd561f0",
+        "type": "ui_ui_control",
+        "z": "3b02c06e308bc46a",
+        "name": "",
+        "events": "all",
+        "x": 881,
+        "y": 301,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a58d48ca5b99c741",
+        "type": "ui_button",
+        "z": "3b02c06e308bc46a",
+        "name": "",
+        "group": "dc052b57.116388",
+        "order": 6,
+        "width": 6,
+        "height": 2,
+        "passthru": false,
+        "label": "Retour à Menu",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\":\"Menu\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 697,
+        "y": 350,
+        "wires": [
+            [
+                "a9b0cc940816b5b1"
+            ]
+        ]
+    },
+    {
+        "id": "a9b0cc940816b5b1",
+        "type": "ui_ui_control",
+        "z": "3b02c06e308bc46a",
+        "name": "",
+        "events": "all",
+        "x": 877,
+        "y": 350,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "106f9c4b5a2b307e",
+        "type": "ui_button",
+        "z": "3b02c06e308bc46a",
+        "name": "",
+        "group": "49446484.5bf994",
+        "order": 6,
+        "width": 6,
+        "height": 2,
+        "passthru": false,
+        "label": "Retour à Menu",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "{\"tab\":\"Menu\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 680,
+        "y": 420,
+        "wires": [
+            [
+                "b0081296e695bb4e"
+            ]
+        ]
+    },
+    {
+        "id": "b0081296e695bb4e",
+        "type": "ui_ui_control",
+        "z": "3b02c06e308bc46a",
+        "name": "",
+        "events": "all",
+        "x": 880,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a7d4e707.fd8a18",
+        "type": "inject",
+        "z": "d7276cd2.d6f55",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 240,
+        "wires": [
+            [
+                "97c92fce.dd6f6"
+            ]
+        ]
+    },
+    {
+        "id": "97c92fce.dd6f6",
+        "type": "template",
+        "z": "d7276cd2.d6f55",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "python",
+        "syntax": "plain",
+        "template": "import time\n\nwhile True:\n    print(time.ctime())\n    time.sleep(10)\n",
+        "output": "str",
+        "x": 320,
+        "y": 240,
+        "wires": [
+            [
+                "1273e63.74b5c1a"
+            ]
+        ]
+    },
+    {
+        "id": "1273e63.74b5c1a",
+        "type": "file",
+        "z": "d7276cd2.d6f55",
+        "name": "",
+        "filename": "pythontest.py",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 510,
+        "y": 240,
+        "wires": [
+            [
+                "14057906.c24237"
+            ]
+        ]
+    },
+    {
+        "id": "14057906.c24237",
+        "type": "exec",
+        "z": "d7276cd2.d6f55",
+        "command": "python3 pythontest.py",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "true",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 740,
+        "y": 240,
+        "wires": [
+            [
+                "a33c536c.9900e"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "a33c536c.9900e",
+        "type": "debug",
+        "z": "d7276cd2.d6f55",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 240,
+        "wires": []
+    }
+]
